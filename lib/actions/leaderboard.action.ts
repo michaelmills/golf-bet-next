@@ -1,7 +1,7 @@
 "use server";
 
-import game from "../../app/teams.json";
-import data from "../../app/data.json";
+import game from "../../data/teams.json";
+import data from "../../data/data.json";
 import {
   getAdjustedScore,
   parseScore,
