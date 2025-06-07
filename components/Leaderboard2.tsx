@@ -8,8 +8,9 @@ import {
   toDisplayScore,
   getTotalRoundScore,
 } from "@/lib/utils";
-import { Team } from "./Team";
+import { TeamBoard } from "./TeamBoard";
 import { TeamRankBox } from "./TeamRankBox";
+import { motion } from "motion/react";
 
 interface LeaderboardProps {
   teams: Team[];
@@ -17,12 +18,41 @@ interface LeaderboardProps {
 
 export const Leaderboard2 = ({ teams }: LeaderboardProps) => {
   return (
-    <div className="h-full rounded-t-3xl bg-cyan-700 py-2 overflow-hidden">
-      <div className="w-screen md:w-2/3 h-full max-h-full justify-center mx-auto space-y-2 overflow-y-auto">
-        {teams.map((team, i) => (
-          <TeamRankBox key={team.name} rank={i} team={team} />
-        ))}
-      </div>
-    </div>
+    <>
+      <motion.div
+        initial={{ y: "100vh" }}
+        animate={{ y: 0 }}
+        transition={{
+          scale: {
+            type: "spring",
+            visualDuration: 0.5,
+            bounce: 0.5,
+          },
+        }}
+        className="h-full bg-base-300 py-2 overflow-hidden"
+      >
+        <div className="w-screen md:w-2/3 h-full max-h-full justify-center mx-auto space-y-4 overflow-y-auto no-scrollbar">
+          {teams.map((team, i) => (
+            <TeamRankBox
+              key={team.name}
+              rank={i}
+              team={team}
+              handleClick={(teamName: string) =>
+                document.getElementById(teamName + "-board").showModal()
+              }
+            />
+          ))}
+        </div>
+      </motion.div>
+
+      {teams.map((team) => (
+        <TeamBoard
+          key={team.name + "-board"}
+          id={team.name + "-board"}
+          name={team.name}
+          members={team.members}
+        />
+      ))}
+    </>
   );
 };

@@ -8,7 +8,7 @@ import {
   toDisplayScore,
   getTotalRoundScore,
 } from "@/lib/utils";
-import { Team } from "./Team";
+import { TeamBoard } from "./TeamBoard";
 
 interface LeaderboardProps {
   teams: Team[];
@@ -122,9 +122,10 @@ export const Leaderboard = ({ teams }: LeaderboardProps) => {
         </table>
       </div>
       {teams.map((team) => (
-        <Team
+        <TeamBoard
           key={team.name + "-board"}
           id={team.name + "-board"}
+          name={team.name}
           members={team.members}
         />
       ))}
