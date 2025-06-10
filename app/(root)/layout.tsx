@@ -1,9 +1,5 @@
-import { redirect } from "next/navigation";
-import bg from "../../public/wave.svg";
-import bgStackVertical from "../../public/stacked-waves-haikei-vertical-light.svg";
-import balboaGolfCourse from "../../public/balboa-golf-course.jpg";
 import { Navbar } from "@/components/Navbar";
-import { CalendarIcon } from "@heroicons/react/24/outline";
+// import { CalendarIcon } from "@heroicons/react/24/outline";
 
 export default async function RootLayout({
   children,

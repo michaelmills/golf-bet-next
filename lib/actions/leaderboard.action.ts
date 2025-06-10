@@ -2,25 +2,20 @@
 
 import game from "../../data/teams.json";
 import data from "../../data/data.json";
-import {
-  getAdjustedScore,
-  parseScore,
-  toDisplayScore,
-  getTotalRoundScore,
-} from "@/lib/utils";
+import { getAdjustedScore, parseScore } from "@/lib/utils";
 
 export const getLeaderboard = async (): Promise<Team[]> => {
-  const teams: Team[] = game.teams.map((team, i) => {
+  const teams: Team[] = game.teams.map((team) => {
     const members = data.leaderboardRows
       .filter((row) => team.golfers.includes(row.playerId))
       .map((row) => {
-        let rounds = new Map(
+        const rounds = new Map(
           row.rounds.map((round) => [
             Number(round.roundId.$numberInt),
             parseScore(round.scoreToPar),
           ]),
         );
-        let member: TeamMember = {
+        const member: TeamMember = {
           name: row.firstName + " " + row.lastName,
           isCut: row.status === "cut",
           score: parseScore(row.total),
@@ -33,10 +28,6 @@ export const getLeaderboard = async (): Promise<Team[]> => {
     const score = members.reduce((acc, player) => {
       return acc + getAdjustedScore(player);
     }, 0);
-
-    const teamRounds = members.map((golfer) => {
-      golfer.rounds.keys;
-    });
 
     return {
       name: team.player,

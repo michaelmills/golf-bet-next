@@ -1,6 +1,4 @@
-interface RulesProp {}
-
-const Rules = async ({}: RulesProp) => {
+const Rules = async () => {
   return (
     <div className="m-4">
       <p className="font-semibold text-xl underline mb-2">Draft Rules</p>

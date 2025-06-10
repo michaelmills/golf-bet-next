@@ -18,6 +18,6 @@ export function getTotalRoundScore(
   golfers: TeamMember[],
 ): number {
   return golfers.reduce((acc, golfer) => {
-    return acc + (golfer.rounds.has(round) ? golfer.rounds.get(round) : 0);
+    return acc + (golfer.rounds.has(round) ? golfer.rounds.get(round)! : 0);
   }, 0);
 }
