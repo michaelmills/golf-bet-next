@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export const Navbar = () => {
   return (
     <div className="navbar bg-neutral shadow-sm">
@@ -13,60 +15,53 @@ export const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-lg dropdown-content bg-base-content rounded-box z-1 mt-3 w-max p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
+              <Link href="/rules">Rules</Link>
+              <p>Leaderboard</p>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>US Open 2025</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>PGA Championship 2025</a>
                 </li>
               </ul>
             </li>
-            <li>
-              <a>Item 3</a>
-            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">MGC</a>
+        <Link href="/" className="btn btn-ghost text-xl">
+          MGC
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
-          </li>
-          <li>
             <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
+              <summary>Leaderboard</summary>
+              <ul className="p-2 bg-base-content z-1">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>US Open 2025</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>PGA Championship 2025</a>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>Item 3</a>
+            <Link href="/rules">Rules</Link>
           </li>
         </ul>
       </div>

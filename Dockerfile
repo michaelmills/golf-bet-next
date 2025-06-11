@@ -23,6 +23,7 @@ COPY pnpm-lock.yaml ./
 RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store pnpm fetch --frozen-lockfile
 
 COPY package.json ./
+COPY public/ ./
 RUN --mount=type=cache,id=pnpm,target=/root/.local/share/pnpm/store pnpm install --frozen-lockfile
 
 COPY . .
@@ -46,9 +47,10 @@ RUN adduser --system --uid 1001 nextjs
 COPY --from=deps /app/node_modules /app/node_modules
 COPY --from=build --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=build --chown=nextjs:nodejs /app/public ./public
 
 # Ensuring no unnecessary permissions are given and add necessary permissions for it to run server.js properly.
-RUN chmod -R a-w+x . && chmod -R a+x .next node_modules
+RUN chmod -R a-w+x . && chmod -R a+x .next node_modules public
 
 USER nextjs
 
@@ -57,5 +59,5 @@ EXPOSE 3000
 ENV PORT=3000
 
 # server.js created by nextjs standalone output
-ENV HOSTNAME="0.0.0.0."
+ENV HOSTNAME="0.0.0.0"
 CMD ["node","server.js"]

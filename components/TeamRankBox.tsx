@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { toDisplayScore } from "@/lib/utils";
 import { motion } from "motion/react";
 
@@ -35,12 +34,7 @@ export const TeamRankBox = ({ rank, team, handleClick }: RankProps) => {
           <div className="flex grow items-center gap-3">
             <div className="avatar">
               <div className="mask mask-circle h-16 w-16">
-                <Image
-                  src="/IMG_0289.jpeg"
-                  width={500}
-                  height={500}
-                  alt="Avatar Tailwind CSS Component"
-                />
+                <img src="/IMG_0289.jpeg" alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>

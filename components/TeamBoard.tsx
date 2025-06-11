@@ -16,7 +16,7 @@ export const TeamBoard = forwardRef<HTMLDialogElement, TeamBoardProps>(
           <button>close</button>
         </form>
         <div className="modal-box rounded-3xl text-base-content">
-          <div className="font-semibold text-xl underline underline-offset-8 text-center">
+          <div className="font-semibold text-lg underline underline-offset-8 text-center mb-2">
             {name}
           </div>
           <div className="overflow-x-auto">
