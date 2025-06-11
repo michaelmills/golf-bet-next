@@ -1,14 +1,7 @@
-import { getLeaderboard } from "@/lib/actions/leaderboard.action";
-import { Leaderboard } from "../../components/Leaderboard";
+import { redirect } from "next/navigation";
 
 const Home = async () => {
-  const teams = await getLeaderboard();
-
-  return (
-    <>
-      <Leaderboard teams={teams} />
-    </>
-  );
+  redirect("/leaderboard/tournamentId/2");
 };
 
 export default Home;

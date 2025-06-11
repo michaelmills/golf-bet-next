@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="navbar bg-neutral shadow-sm">
+    <div className="navbar bg-neutral bg-linear-to-r from-neutral from-20% via-base-content via-60% to-accent to-95% shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,17 +25,36 @@ export const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content bg-base-content rounded-box z-1 mt-3 w-max p-2 shadow"
+            className="menu menu-lg dropdown-content bg-neutral rounded-box z-1 mt-3 w-max p-2 shadow"
           >
             <li>
-              <Link href="/rules">Rules</Link>
+              <Link
+                href="/rules"
+                onClick={() => (document.activeElement as HTMLElement).blur()}
+              >
+                Rules
+              </Link>
               <p>Leaderboard</p>
               <ul className="p-2">
                 <li>
-                  <a>US Open 2025</a>
+                  <Link
+                    href="/leaderboard/tournamentId/2"
+                    onClick={() =>
+                      (document.activeElement as HTMLElement).blur()
+                    }
+                  >
+                    US Open 2025
+                  </Link>
                 </li>
                 <li>
-                  <a>PGA Championship 2025</a>
+                  <Link
+                    href="/leaderboard/tournamentId/1"
+                    onClick={() =>
+                      (document.activeElement as HTMLElement).blur()
+                    }
+                  >
+                    PGA Championship 2025
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -46,28 +65,44 @@ export const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <details>
-              <summary>Leaderboard</summary>
-              <ul className="p-2 bg-base-content z-1">
-                <li>
-                  <a>US Open 2025</a>
-                </li>
-                <li>
-                  <a>PGA Championship 2025</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <Link href="/rules">Rules</Link>
-          </li>
-        </ul>
+        <div className="dropdown dropdown-hover dropdown-end">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost rounded-field"
+          >
+            Leaderboard
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu dropdown-content bg-neutral rounded-box z-1 w-52 p-2 pt-4 shadow-sm"
+          >
+            <li>
+              <Link
+                href="/leaderboard/tournamentId/2"
+                onClick={() => (document.activeElement as HTMLElement).blur()}
+                className="link link-hover"
+              >
+                US Open 2025
+              </Link>
+              <a></a>
+            </li>
+            <li>
+              <Link
+                href="/leaderboard/tournamentId/1"
+                onClick={() => (document.activeElement as HTMLElement).blur()}
+                className="link link-hover"
+              >
+                PGA Championship 2025
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Link href="/rules" className="btn btn-ghost rounded-field">
+          Rules
+        </Link>
       </div>
-      {/* <div className="navbar-end"> */}
-      {/*   <a className="btn">Button</a> */}
-      {/* </div> */}
+      <div className="navbar-end"></div>
     </div>
   );
 };
