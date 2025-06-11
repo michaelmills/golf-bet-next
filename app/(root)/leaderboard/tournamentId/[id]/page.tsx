@@ -34,16 +34,16 @@ const Tournament = async ({ params }: { params: Promise<{ id: string }> }) => {
     <>
       {tmap.has(id) && (
         <>
-          <div className="relative w-full h-2/5 bg-cover bg-no-repeat">
+          <div className="relative w-full h-2/5 md:h-1/5 bg-cover bg-no-repeat">
             <div className="bg-[url(/balboa-golf-course.jpg)] absolute w-full h-full bg-cover bg-no-repeat brightness-90 blur-[1px]"></div>
             <div className="text-center w-full h-full relative">
-              <p className="text-primary-content text-4xl font-semibold py-5">
+              <p className="text-primary-content text-3xl md:text-4xl font-semibold py-5">
                 Leaderboard
               </p>
-              <div className="backdrop-blur-xl m-auto w-2/3 py-2 mb-2 rounded-xl">
-                <div className="text-sm font-regular text-primary-content">
+              <div className="backdrop-blur-xl m-auto w-2/3 md:w-[400px] py-2 mb-2 rounded-xl">
+                <div className="text-sm md:text-lg font-regular text-primary-content">
                   {/* <CalendarIcon className="size-6 mr-2 inline-block" /> */}
-                  <span className="text-lg font-black">
+                  <span className="text-lg md:text-xl font-black">
                     {tmap.get(id)!.name}
                   </span>
                   <br />

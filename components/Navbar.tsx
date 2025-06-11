@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="navbar bg-neutral bg-linear-to-r from-neutral from-20% via-base-content via-60% to-accent to-95% shadow-sm">
+    <div className="navbar text-neutral-content bg-linear-to-r from-neutral from-20% via-base-content via-60% to-accent to-95% shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl">
+        <Link href="/" className="btn btn-ghost text-xl lg:text-2xl">
           MGC
         </Link>
       </div>
@@ -69,13 +69,13 @@ export const Navbar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost rounded-field"
+            className="btn btn-ghost rounded-field lg:text-lg"
           >
             Leaderboard
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content bg-neutral rounded-box z-1 w-52 p-2 pt-4 shadow-sm"
+            className="menu dropdown-content lg:text-lg bg-neutral rounded-box z-1 w-52 p-2 pt-4 shadow-sm"
           >
             <li>
               <Link
@@ -98,7 +98,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/rules" className="btn btn-ghost rounded-field">
+        <Link href="/rules" className="btn btn-ghost rounded-field lg:text-lg">
           Rules
         </Link>
       </div>
