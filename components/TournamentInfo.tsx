@@ -3,7 +3,6 @@
 import { UserX } from "lucide-react";
 
 export const TournamentInfo = (tournament: TournamentInfoProps) => {
-  console.log(tournament);
   return (
     <div className="flex flex-col justify-center">
       <div className="max-w-max text-center text-2xl sm:text-3xl md:text-4xl font-black">
