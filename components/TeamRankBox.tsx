@@ -1,15 +1,16 @@
 "use client";
 
 import { toDisplayScore } from "@/lib/utils";
+import { UserCircleIcon } from "@heroicons/react/20/solid";
 import { motion } from "motion/react";
 
 interface RankProps {
   rank: number;
   team: Team;
-  handleClick: (teamName: string) => void;
+  handleClickAction: (teamName: string) => void;
 }
 
-export const TeamRankBox = ({ rank, team, handleClick }: RankProps) => {
+export const TeamRankBox = ({ rank, team, handleClickAction }: RankProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0 }}
@@ -24,24 +25,31 @@ export const TeamRankBox = ({ rank, team, handleClick }: RankProps) => {
       }}
     >
       <div
-        className={`rounded-xl bg-base-100 px-2 py-4 ${rank === 0 ? "mt-1" : ""} h-max border-2 border-base-300 text-base-content`}
-        onClick={() => handleClick(team.name)}
+        className={`rounded-lg bg-base-100 p-4 ${rank === 0 ? "mt-1 lg:mt-3" : ""} h-max border-2 border-base-300 text-base-content`}
+        onClick={() => handleClickAction(team.name)}
       >
         <div className="flex flex-row items-center min-h-full">
-          <div className="text-2xl font-bold text-center items-center grow-0 shrink-0 min-w-8 mr-2">
+          <div className="text-2xl font-bold text-left items-center grow-0 shrink-0 min-w-8">
             {rank + 1}
           </div>
           <div className="flex grow items-center gap-3">
             <div className="avatar">
               <div className="mask mask-circle h-16 w-16">
-                <img src="/IMG_0289.jpeg" alt="Avatar Tailwind CSS Component" />
+                {team.name.includes("Mauro") ? (
+                  <img
+                    src="/IMG_0289.jpeg"
+                    alt="Avatar Tailwind CSS Component"
+                  />
+                ) : (
+                  <UserCircleIcon />
+                )}
               </div>
             </div>
             <div>
               <div className="min-w-48 text-xl font-semibold">{team.name}</div>
               <div className="uppercase text-sm font-regular proportional-nums">
                 <span className="text-green-600">
-                  {team.memberCount} active
+                  {team.activeMemberCount} active
                 </span>
                 &nbsp;&nbsp;&#183;&nbsp;&nbsp;
                 <span className="text-rose-700">

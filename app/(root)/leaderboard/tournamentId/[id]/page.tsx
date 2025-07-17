@@ -1,60 +1,98 @@
-import { getLeaderboard } from "@/lib/actions/leaderboard.action";
-import { Leaderboard } from "../../../../../components/Leaderboard";
+import { TournamentInfo } from "@/components/TournamentInfo";
+import matches from "@/data/matches.json";
+import { getAdjustedScore, parseScore } from "@/lib/utils";
+import { fetchLeaderboard, fetchTournament } from "@actions/leaderboard.action";
+import { Leaderboard } from "@components/Leaderboard";
+import dayjs from "dayjs";
+import utc from "dayjs/plugin/utc";
 
-interface TournamentDetails {
-  name: string;
-  date: string;
-  course: string;
-}
+const getTournament = async (tournId: string): Promise<TournamentInfoProps> => {
+  const response = await fetchTournament(tournId);
+  const data = await response.json();
+
+  dayjs.extend(utc);
+  const begin = dayjs(+data.date.start.$date.$numberLong)
+    .utc()
+    .format("MMMM D");
+  const end = dayjs(+data.date.end.$date.$numberLong).utc().format("D, YYYY");
+
+  const info: TournamentInfoProps = {
+    name: data.name,
+    date: begin + " - " + end,
+    course: data.courses[0].courseName,
+    status: data.status,
+    par: data.courses[0].parTotal,
+  };
+  return Promise.resolve(info);
+};
 
 const Tournament = async ({ params }: { params: Promise<{ id: string }> }) => {
-  const { id } = await params;
-  console.log(id);
+  let { id } = await params;
 
-  const pga: TournamentDetails = {
-    name: "PGA Championship",
-    date: "May 15 - 18, 2025",
-    course: "Quail Hollow Club",
-  };
+  const leaderboard = await (await fetchLeaderboard(id)).json();
+  let tournamentInfo = await getTournament(id);
 
-  const usopen: TournamentDetails = {
-    name: "US Open",
-    date: "June 12 - 15, 2025",
-    course: "Oakmont Country Club",
-  };
+  if (leaderboard.cutLines.length > 0) {
+    tournamentInfo.cutLine = leaderboard.cutLines[0].cutScore;
+  }
 
-  const tmap = new Map<string, TournamentDetails>([
-    ["1", pga],
-    ["2", usopen],
-  ]);
+  const teams: Team[] = matches.games
+    .find((g) => g.tournamentId === id)!
+    .teams.map((team) => {
+      const members = leaderboard.leaderboardRows
+        .filter((row: any) => team.golfers.includes(row.playerId))
+        .map((row: any) => {
+          const rounds: Map<number, number> = new Map(
+            row.rounds.map((round: any) => [
+              Number(round.roundId.$numberInt),
+              parseScore(round.scoreToPar),
+            ]),
+          );
 
-  const teams = await getLeaderboard();
+          if (row.status === "active") {
+            rounds.set(
+              Number(row.currentRound.$numberInt),
+              parseScore(row.currentRoundScore),
+            );
+          }
+
+          const member: TeamMember = {
+            name: row.firstName + " " + row.lastName,
+            isCut: row.status === "cut",
+            isActive: row.status === "active",
+            score: parseScore(row.total),
+            adjusted: row.status === "cut" ? 2 : Number(row.total),
+            rounds: rounds,
+            holeStart: row.startingHole.$numberInt,
+            thru: row.currentHole.$numberInt,
+          };
+          return member;
+        });
+
+      const score = members.reduce((acc: number, player: any) => {
+        return acc + getAdjustedScore(player);
+      }, 0);
+
+      return {
+        name: team.player,
+        score: score,
+        members: members,
+        memberCount: members.length,
+        cutMemberCount: members.filter((x: TeamMember) => x.isCut).length,
+        activeMemberCount: members.filter((x: TeamMember) => x.isActive).length,
+      };
+    });
+
+  const sorted = teams.sort((p1, p2) => p1.score - p2.score);
 
   return (
     <>
-      {tmap.has(id) && (
+      {tournamentInfo && (
         <>
-          <div className="relative w-full h-2/5 md:h-1/5 bg-cover bg-no-repeat">
-            <div className="bg-[url(/balboa-golf-course.jpg)] absolute w-full h-full bg-cover bg-no-repeat brightness-90 blur-[1px]"></div>
-            <div className="text-center w-full h-full relative">
-              <p className="text-primary-content text-3xl md:text-4xl font-semibold py-5">
-                Leaderboard
-              </p>
-              <div className="backdrop-blur-xl m-auto w-2/3 md:w-[400px] py-2 mb-2 rounded-xl">
-                <div className="text-sm md:text-lg font-regular text-primary-content">
-                  {/* <CalendarIcon className="size-6 mr-2 inline-block" /> */}
-                  <span className="text-lg md:text-xl font-black">
-                    {tmap.get(id)!.name}
-                  </span>
-                  <br />
-                  {tmap.get(id)!.date}
-                  <br />
-                  {tmap.get(id)!.course}
-                </div>
-              </div>
-            </div>
+          <div className="w-full md:w-2/3 h-min p-4 mb-1 mx-auto bg-base-100 rounded-lg">
+            <TournamentInfo {...tournamentInfo} />
           </div>
-          <Leaderboard teams={teams} />
+          <Leaderboard teams={sorted} />
         </>
       )}
     </>

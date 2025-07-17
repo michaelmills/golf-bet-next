@@ -1,27 +1,19 @@
 "use client";
 
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <div className="navbar text-neutral-content bg-linear-to-r from-neutral from-20% via-base-content via-60% to-accent to-95% shadow-sm">
+    <div className="navbar min-h-0 h-14 text-neutral-content bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80%">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost px-2 lg:hidden"
+          >
+            <Menu />
           </div>
           <ul
             tabIndex={0}
@@ -38,7 +30,17 @@ export const Navbar = () => {
               <ul className="p-2">
                 <li>
                   <Link
-                    href="/leaderboard/tournamentId/2"
+                    href="/leaderboard/tournamentId/100"
+                    onClick={() =>
+                      (document.activeElement as HTMLElement).blur()
+                    }
+                  >
+                    The Open Championship 2025
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/leaderboard/tournamentId/026"
                     onClick={() =>
                       (document.activeElement as HTMLElement).blur()
                     }
@@ -48,7 +50,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/leaderboard/tournamentId/1"
+                    href="/leaderboard/tournamentId/033"
                     onClick={() =>
                       (document.activeElement as HTMLElement).blur()
                     }
@@ -60,7 +62,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl lg:text-2xl">
+        <Link href="/" className="btn btn-ghost text-2xl lg:text-2xl">
           MGC
         </Link>
       </div>
@@ -79,17 +81,25 @@ export const Navbar = () => {
           >
             <li>
               <Link
-                href="/leaderboard/tournamentId/2"
+                href="/leaderboard/tournamentId/100"
+                onClick={() => (document.activeElement as HTMLElement).blur()}
+                className="link link-hover"
+              >
+                The Open Championship 2025
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/leaderboard/tournamentId/026"
                 onClick={() => (document.activeElement as HTMLElement).blur()}
                 className="link link-hover"
               >
                 US Open 2025
               </Link>
-              <a></a>
             </li>
             <li>
               <Link
-                href="/leaderboard/tournamentId/1"
+                href="/leaderboard/tournamentId/033"
                 onClick={() => (document.activeElement as HTMLElement).blur()}
                 className="link link-hover"
               >

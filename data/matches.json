@@ -1,0 +1,81 @@
+{
+  "games": [
+    {
+      "tournamentId": "033",
+      "tournamentName": "PGA Championship",
+      "teams": [
+        {
+          "player": "Michael Mills",
+          "golfers": ["46046", "28089", "32839", "55182"]
+        },
+        {
+          "player": "Mauro Ormedilla",
+          "golfers": ["28237", "52955", "34046", "35891"]
+        },
+        {
+          "player": "Jon Yi",
+          "golfers": ["33448", "30911", "37455", "39997"]
+        },
+        {
+          "player": "Anthony Artuso",
+          "golfers": ["47959", "46970", "45486", "36689"]
+        },
+        {
+          "player": "Patrick Podue",
+          "golfers": ["48081", "50525", "35450", "33204"]
+        }
+      ]
+    },
+    {
+      "tournamentId": "026",
+      "tournamentName": "U.S. Open",
+      "teams": [
+        {
+          "player": "Michael Mills",
+          "golfers": ["45486", "49960", "47504", "48887"]
+        },
+        {
+          "player": "Mauro Ormedilla",
+          "golfers": ["47959", "52955", "46717", "33141"]
+        },
+        {
+          "player": "Jon Yi",
+          "golfers": ["50525", "28237", "35450", "54591"]
+        },
+        {
+          "player": "Anthony Artuso",
+          "golfers": ["46970", "48081", "33448", "39997"]
+        },
+        {
+          "player": "Patrick Podue",
+          "golfers": ["46046", "33204", "30911", "34046"]
+        }
+      ]
+    },
+    {
+      "tournamentId": "100",
+      "teams": [
+        {
+          "player": "Michael Mills",
+          "golfers": ["48081", "24502", "22405", "52955"]
+        },
+        {
+          "player": "Mauro Ormedilla",
+          "golfers": ["47959", "50525", "51766", "57366"]
+        },
+        {
+          "player": "Jon Yi",
+          "golfers": ["28237", "46970", "33204", "34098"]
+        },
+        {
+          "player": "Anthony Artuso",
+          "golfers": ["30911", "46717", "49960", "45486"]
+        },
+        {
+          "player": "Patrick Podue",
+          "golfers": ["46046", "34363", "52215", "47504"]
+        }
+      ]
+    }
+  ]
+}

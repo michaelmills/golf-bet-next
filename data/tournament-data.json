@@ -1,0 +1,1102 @@
+{
+  "_id": {
+    "$oid": "66c3f8752eca3db4d08205c8"
+  },
+  "orgId": "1",
+  "year": "2025",
+  "tournId": "026",
+  "name": "U.S. Open",
+  "purse": {
+    "$numberInt": "0"
+  },
+  "fedexCupPoints": {
+    "$numberInt": "750"
+  },
+  "date": {
+    "start": {
+      "$date": {
+        "$numberLong": "1749686400000"
+      }
+    },
+    "end": {
+      "$date": {
+        "$numberLong": "1749945600000"
+      }
+    },
+    "weekNumber": "24"
+  },
+  "format": "stroke",
+  "status": "Official",
+  "currentRound": {
+    "$numberInt": "4"
+  },
+  "timeZone": "America/New_York",
+  "courses": [
+    {
+      "courseId": "608",
+      "courseName": "Oakmont Country Club",
+      "host": "Yes",
+      "location": {
+        "country": "USA",
+        "state": "Pennsylvania",
+        "city": "Oakmont"
+      },
+      "parFrontNine": "35",
+      "parBackNine": "35",
+      "parTotal": "70",
+      "holes": [
+        {
+          "holeId": {
+            "$numberInt": "1"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "2"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "3"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "4"
+          },
+          "par": "5"
+        },
+        {
+          "holeId": {
+            "$numberInt": "5"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "6"
+          },
+          "par": "3"
+        },
+        {
+          "holeId": {
+            "$numberInt": "7"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "8"
+          },
+          "par": "3"
+        },
+        {
+          "holeId": {
+            "$numberInt": "9"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "10"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "11"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "12"
+          },
+          "par": "5"
+        },
+        {
+          "holeId": {
+            "$numberInt": "13"
+          },
+          "par": "3"
+        },
+        {
+          "holeId": {
+            "$numberInt": "14"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "15"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "16"
+          },
+          "par": "3"
+        },
+        {
+          "holeId": {
+            "$numberInt": "17"
+          },
+          "par": "4"
+        },
+        {
+          "holeId": {
+            "$numberInt": "18"
+          },
+          "par": "4"
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "lastName": "Åberg",
+      "firstName": "Ludvig",
+      "playerId": "52955",
+      "isAmateur": false
+    },
+    {
+      "lastName": "An",
+      "firstName": "Byeong Hun",
+      "playerId": "33948",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bairstow",
+      "firstName": "Sam",
+      "playerId": "60369",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Ballester",
+      "firstName": "Jose Luis",
+      "playerId": "60165",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Barbaree, Jr.",
+      "firstName": "Philip",
+      "playerId": "50157",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bauchou",
+      "firstName": "Zach",
+      "playerId": "48001",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Beck",
+      "firstName": "Evan",
+      "playerId": "45618",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Berger",
+      "firstName": "Daniel",
+      "playerId": "40026",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bezuidenhout",
+      "firstName": "Christiaan",
+      "playerId": "45522",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bhatia",
+      "firstName": "Akshay",
+      "playerId": "56630",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Blair",
+      "firstName": "Zac",
+      "playerId": "40058",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Blanchet",
+      "firstName": "Chandler",
+      "playerId": "54788",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bland",
+      "firstName": "Richard",
+      "playerId": "45836",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bradley",
+      "firstName": "Keegan",
+      "playerId": "33141",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Bridgeman",
+      "firstName": "Jacob",
+      "playerId": "60004",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Buchanan",
+      "firstName": "Jackson",
+      "playerId": "66742",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Burns",
+      "firstName": "Sam",
+      "playerId": "47504",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Calkins",
+      "firstName": "Brady",
+      "playerId": "56742",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Campbell",
+      "firstName": "Brian",
+      "playerId": "46443",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Canter",
+      "firstName": "Laurie",
+      "playerId": "34362",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Cantlay",
+      "firstName": "Patrick",
+      "playerId": "35450",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Cauley",
+      "firstName": "Bud",
+      "playerId": "34021",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Chandler",
+      "firstName": "Will",
+      "playerId": "58933",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Clark",
+      "firstName": "Wyndham",
+      "playerId": "51766",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Cole",
+      "firstName": "Eric",
+      "playerId": "47591",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Cone",
+      "firstName": "Trevor",
+      "playerId": "49453",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Conners",
+      "firstName": "Corey",
+      "playerId": "39997",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Davis",
+      "firstName": "Cam",
+      "playerId": "45157",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Day",
+      "firstName": "Jason",
+      "playerId": "28089",
+      "isAmateur": false
+    },
+    {
+      "lastName": "DeChambeau",
+      "firstName": "Bryson",
+      "playerId": "47959",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Detry",
+      "firstName": "Thomas",
+      "playerId": "33653",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Díaz",
+      "firstName": "Roberto",
+      "playerId": "35376",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Docherty",
+      "firstName": "Alistair",
+      "playerId": "51680",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Duangmanee",
+      "firstName": "George",
+      "playerId": "58186",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Dunlap",
+      "firstName": "Nick",
+      "playerId": "59866",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Echavarria",
+      "firstName": "Nico",
+      "playerId": "51349",
+      "isAmateur": false
+    },
+    {
+      "lastName": "English",
+      "firstName": "Harris",
+      "playerId": "34099",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Finau",
+      "firstName": "Tony",
+      "playerId": "29725",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Fitzpatrick",
+      "firstName": "Matt",
+      "playerId": "40098",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Fleetwood",
+      "firstName": "Tommy",
+      "playerId": "30911",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Fox",
+      "firstName": "Ryan",
+      "playerId": "29936",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Gerard",
+      "firstName": "Ryan",
+      "playerId": "59018",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Ghim",
+      "firstName": "Doug",
+      "playerId": "52375",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Glover",
+      "firstName": "Lucas",
+      "playerId": "25900",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Gonzalez R.",
+      "firstName": "Emilio",
+      "playerId": "59567",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Gotterup",
+      "firstName": "Chris",
+      "playerId": "59095",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Greyserman",
+      "firstName": "Max",
+      "playerId": "51977",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Griffin",
+      "firstName": "Ben",
+      "playerId": "54591",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Griffin",
+      "firstName": "Lanto",
+      "playerId": "35310",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Grillo",
+      "firstName": "Emiliano",
+      "playerId": "31646",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Gutschewski",
+      "firstName": "Trevor",
+      "playerId": "67203",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Haefner",
+      "firstName": "Grant",
+      "playerId": "59601",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hahn",
+      "firstName": "James",
+      "playerId": "32448",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Harman",
+      "firstName": "Brian",
+      "playerId": "27644",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Harris",
+      "firstName": "Frankie",
+      "playerId": "68606",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hastings",
+      "firstName": "Justin",
+      "playerId": "66248",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hatton",
+      "firstName": "Tyrrell",
+      "playerId": "34363",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Henley",
+      "firstName": "Russell",
+      "playerId": "34098",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Herrera",
+      "firstName": "Joey",
+      "playerId": "59657",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hicks",
+      "firstName": "Justin",
+      "playerId": "25444",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Highsmith",
+      "firstName": "Joe",
+      "playerId": "60067",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hoge",
+      "firstName": "Tom",
+      "playerId": "35532",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Højgaard",
+      "firstName": "Rasmus",
+      "playerId": "52686",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hovland",
+      "firstName": "Viktor",
+      "playerId": "46717",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Howell",
+      "firstName": "Mason",
+      "playerId": "68607",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hubbard",
+      "firstName": "Mark",
+      "playerId": "36801",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Hughes",
+      "firstName": "Mackenzie",
+      "playerId": "35506",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Im",
+      "firstName": "Sungjae",
+      "playerId": "39971",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Jaeger",
+      "firstName": "Stephan",
+      "playerId": "36799",
+      "isAmateur": false
+    },
+    {
+      "lastName": "James",
+      "firstName": "Benjamin",
+      "playerId": "57869",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Johnson",
+      "firstName": "Chase",
+      "playerId": "54869",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Johnson",
+      "firstName": "Dustin",
+      "playerId": "30925",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Jordan",
+      "firstName": "Matthew",
+      "playerId": "55955",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kanaya",
+      "firstName": "Takumi",
+      "playerId": "47917",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kawamoto",
+      "firstName": "Riki",
+      "playerId": "51366",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Keefer",
+      "firstName": "Johnny",
+      "playerId": "63454",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kent",
+      "firstName": "Noah",
+      "playerId": "68084",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Michael",
+      "playerId": "39975",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Si Woo",
+      "playerId": "37455",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Tom",
+      "playerId": "55182",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kirk",
+      "firstName": "Chris",
+      "playerId": "30926",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kneiser",
+      "firstName": "George",
+      "playerId": "59283",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Koepka",
+      "firstName": "Brooks",
+      "playerId": "36689",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Koivun",
+      "firstName": "Jackson",
+      "playerId": "66701",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kozuma",
+      "firstName": "Jinichiro",
+      "playerId": "33689",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Kruyswijk",
+      "firstName": "Jacques",
+      "playerId": "37446",
+      "isAmateur": false
+    },
+    {
+      "lastName": "La Sasso",
+      "firstName": "Michael",
+      "playerId": "68384",
+      "isAmateur": false
+    },
+    {
+      "lastName": "LaCroix",
+      "firstName": "Frederic",
+      "playerId": "52585",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lagergren",
+      "firstName": "Joakim",
+      "playerId": "34317",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lawrence",
+      "firstName": "Thriston",
+      "playerId": "45523",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lee",
+      "firstName": "Bryan",
+      "playerId": "68608",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lee",
+      "firstName": "Min Woo",
+      "playerId": "37378",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Leishman",
+      "firstName": "Marc",
+      "playerId": "26851",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lewis",
+      "firstName": "Riley",
+      "playerId": "65469",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lower",
+      "firstName": "Justin",
+      "playerId": "40162",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Lowry",
+      "firstName": "Shane",
+      "playerId": "33204",
+      "isAmateur": false
+    },
+    {
+      "lastName": "MacIntyre",
+      "firstName": "Robert",
+      "playerId": "52215",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Matsuyama",
+      "firstName": "Hideki",
+      "playerId": "32839",
+      "isAmateur": false
+    },
+    {
+      "lastName": "McCarthy",
+      "firstName": "Denny",
+      "playerId": "47993",
+      "isAmateur": false
+    },
+    {
+      "lastName": "McCarty",
+      "firstName": "Matt",
+      "playerId": "59141",
+      "isAmateur": false
+    },
+    {
+      "lastName": "McCormick",
+      "firstName": "Ryan",
+      "playerId": "46113",
+      "isAmateur": false
+    },
+    {
+      "lastName": "McIlroy",
+      "firstName": "Rory",
+      "playerId": "28237",
+      "isAmateur": false
+    },
+    {
+      "lastName": "McNealy",
+      "firstName": "Maverick",
+      "playerId": "46442",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Mickelson",
+      "firstName": "Phil",
+      "playerId": "01810",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Migliozzi",
+      "firstName": "Guido",
+      "playerId": "39834",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Moldovan",
+      "firstName": "Maxwell",
+      "playerId": "57860",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Molinari",
+      "firstName": "Edoardo",
+      "playerId": "23814",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Morikawa",
+      "firstName": "Collin",
+      "playerId": "50525",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Neergaard-Petersen",
+      "firstName": "Rasmus",
+      "playerId": "52689",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Nicholas",
+      "firstName": "James",
+      "playerId": "58188",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Niemann",
+      "firstName": "Joaquin",
+      "playerId": "45486",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Norgaard",
+      "firstName": "Niklas",
+      "playerId": "35706",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Novak",
+      "firstName": "Andrew",
+      "playerId": "51997",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Olesen",
+      "firstName": "Thorbjørn",
+      "playerId": "33968",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Ortiz",
+      "firstName": "Alvaro",
+      "playerId": "39262",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Ortiz",
+      "firstName": "Carlos",
+      "playerId": "33667",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Ott",
+      "firstName": "Harrison",
+      "playerId": "60567",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Pavan",
+      "firstName": "Andrea",
+      "playerId": "30756",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Pavon",
+      "firstName": "Matthieu",
+      "playerId": "48153",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Pendrith",
+      "firstName": "Taylor",
+      "playerId": "40250",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Perez",
+      "firstName": "Victor",
+      "playerId": "47679",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Phillips",
+      "firstName": "Trent",
+      "playerId": "57625",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Pollo",
+      "firstName": "Zach",
+      "playerId": "68610",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Poston",
+      "firstName": "J.T.",
+      "playerId": "49771",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Rahm",
+      "firstName": "Jon",
+      "playerId": "46970",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Rai",
+      "firstName": "Aaron",
+      "playerId": "46414",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Reed",
+      "firstName": "Patrick",
+      "playerId": "34360",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Riley",
+      "firstName": "Davis",
+      "playerId": "47995",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Rose",
+      "firstName": "Justin",
+      "playerId": "22405",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Schauffele",
+      "firstName": "Xander",
+      "playerId": "48081",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Scheffler",
+      "firstName": "Scottie",
+      "playerId": "46046",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Schenk",
+      "firstName": "Adam",
+      "playerId": "47347",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Scott",
+      "firstName": "Adam",
+      "playerId": "24502",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Simpson",
+      "firstName": "Lance",
+      "playerId": "68614",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Smith",
+      "firstName": "Cameron",
+      "playerId": "35891",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Smith",
+      "firstName": "Jordan",
+      "playerId": "46464",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Spaun",
+      "firstName": "J.J.",
+      "playerId": "39324",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Spieth",
+      "firstName": "Jordan",
+      "playerId": "34046",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Stevens",
+      "firstName": "Sam",
+      "playerId": "55893",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Straka",
+      "firstName": "Sepp",
+      "playerId": "49960",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Sugiura",
+      "firstName": "Yuta",
+      "playerId": "54218",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Summerhays",
+      "firstName": "Preston",
+      "playerId": "57298",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Tankersley",
+      "firstName": "Cameron",
+      "playerId": "59865",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Taylor",
+      "firstName": "Nick",
+      "playerId": "25493",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Thomas",
+      "firstName": "Justin",
+      "playerId": "33448",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Thompson",
+      "firstName": "Davis",
+      "playerId": "58168",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Truslow",
+      "firstName": "Austen",
+      "playerId": "45733",
+      "isAmateur": false
+    },
+    {
+      "lastName": "van Rooyen",
+      "firstName": "Erik",
+      "playerId": "40006",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Vegas",
+      "firstName": "Jhonattan",
+      "playerId": "27064",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Velo",
+      "firstName": "Kevin",
+      "playerId": "58619",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Vincent",
+      "firstName": "Scott",
+      "playerId": "34126",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Vogt",
+      "firstName": "Matt",
+      "playerId": "68613",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Wallace",
+      "firstName": "Matt",
+      "playerId": "48887",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Weaver",
+      "firstName": "Tyler",
+      "playerId": "68612",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Woodland",
+      "firstName": "Gary",
+      "playerId": "31323",
+      "isAmateur": false
+    },
+    {
+      "lastName": "Young",
+      "firstName": "Cameron",
+      "playerId": "57366",
+      "isAmateur": false
+    }
+  ],
+  "timestamp": {
+    "$date": {
+      "$numberLong": "1750087928825"
+    }
+  }
+}

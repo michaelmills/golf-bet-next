@@ -1,5 +1,9 @@
 import { Navbar } from "@/components/Navbar";
-// import { CalendarIcon } from "@heroicons/react/24/outline";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Major Golf Championship",
+};
 
 export default async function RootLayout({
   children,
@@ -7,8 +11,10 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex flex-col h-dvh w-dvw bg-neutral">
-      <Navbar />
+    <main className="flex flex-col h-dvh w-dvw bg-base-200">
+      <div className="mb-1">
+        <Navbar />
+      </div>
       {children}
     </main>
   );
