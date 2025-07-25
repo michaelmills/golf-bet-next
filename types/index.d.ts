@@ -29,6 +29,7 @@ interface TournamentInfoProps {
   course: string;
   status: string;
   par: string;
+  currentRound?: string;
   cutLine?: string;
 }
 

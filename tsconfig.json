@@ -17,6 +17,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
@@ -29,10 +30,10 @@
       "app/*": [
         "./app/*"
       ],
-      "@components/*": [
+      "@/components/*": [
         "components/*"
       ],
-      "@actions/*": [
+      "@/actions/*": [
         "lib/actions/*"
       ]
     }

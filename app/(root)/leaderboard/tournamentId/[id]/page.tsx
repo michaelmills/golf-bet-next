@@ -1,8 +1,11 @@
+import {
+    fetchLeaderboard,
+    fetchTournament,
+} from "@/actions/leaderboard.action";
+import { Leaderboard } from "@/components/Leaderboard";
 import { TournamentInfo } from "@/components/TournamentInfo";
 import matches from "@/data/matches.json";
 import { getAdjustedScore, parseScore } from "@/lib/utils";
-import { fetchLeaderboard, fetchTournament } from "@actions/leaderboard.action";
-import { Leaderboard } from "@components/Leaderboard";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 
@@ -31,6 +34,8 @@ const Tournament = async ({ params }: { params: Promise<{ id: string }> }) => {
 
   const leaderboard = await (await fetchLeaderboard(id)).json();
   let tournamentInfo = await getTournament(id);
+
+  tournamentInfo.currentRound = leaderboard.roundId.$numberInt;
 
   if (leaderboard.cutLines.length > 0) {
     tournamentInfo.cutLine = leaderboard.cutLines[0].cutScore;

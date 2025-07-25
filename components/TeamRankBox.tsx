@@ -1,7 +1,6 @@
 "use client";
 
 import { toDisplayScore } from "@/lib/utils";
-import { UserCircleIcon } from "@heroicons/react/20/solid";
 import { motion } from "motion/react";
 
 interface RankProps {
@@ -36,29 +35,33 @@ export const TeamRankBox = ({ rank, team, handleClickAction }: RankProps) => {
             <div className="avatar">
               <div className="mask mask-circle h-16 w-16">
                 {team.name.includes("Mauro") ? (
+                  <img src="/IMG_0289.jpeg" alt="Mauro" />
+                ) : (
                   <img
-                    src="/IMG_0289.jpeg"
+                    src="/IMG_6497.jpeg"
+                    width={250}
+                    height={250}
                     alt="Avatar Tailwind CSS Component"
                   />
-                ) : (
-                  <UserCircleIcon />
                 )}
               </div>
             </div>
             <div>
-              <div className="min-w-48 text-xl font-semibold">{team.name}</div>
-              <div className="uppercase text-sm font-regular proportional-nums">
-                <span className="text-green-600">
+              <div className="min-w-48 text-xl md:text-2xl font-medium">
+                {team.name}
+              </div>
+              <div className="uppercase text-xs md:text-sm font-medium proportional-nums">
+                <span className="text-green-600/90">
                   {team.activeMemberCount} active
                 </span>
                 &nbsp;&nbsp;&#183;&nbsp;&nbsp;
-                <span className="text-rose-700">
+                <span className="text-rose-700/90">
                   {team.cutMemberCount} / {team.memberCount} cut
                 </span>
               </div>
             </div>
           </div>
-          <div className="shrink-0 min-w-10 pr-4 text-right font-semibold text-2xl">
+          <div className="shrink-0 min-w-10 pr-4 text-right font-medium text-xl md:text-2xl">
             {toDisplayScore(team.score)}
           </div>
         </div>

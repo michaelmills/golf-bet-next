@@ -29,7 +29,11 @@ const Rules = async () => {
           <ul className="list-none lg:text-lg">
             <li className="-indent-6 pl-8 mb-4">
               <FlagIcon className="inline size-4 lg:size-5 mr-2 align-[-2px]" />
-              Total score of a golfer who misses the cut will be adjusted to +2.
+              Cut player penalty is the ceiling of half the offical cut line and
+              maxes out at +2.
+              <br />
+              &nbsp;i.e. Cut line of +7, results in a penalty of +4. Cut line of
+              +1, results in a penalty of +2.
             </li>
             <li className="-indent-6 pl-8 mb-4">
               <FlagIcon className="inline size-4 lg:size-5 mr-2 align-[-2px]" />

@@ -2,10 +2,11 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   return (
-    <div className="navbar min-h-0 h-14 text-neutral-content bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80%">
+    <div className="navbar min-h-0 h-10 md:h-14 text-neutral-content bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80%">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -112,7 +113,9 @@ export const Navbar = () => {
           Rules
         </Link>
       </div>
-      <div className="navbar-end"></div>
+      <div className="navbar-end">
+        <ThemeToggle />
+      </div>
     </div>
   );
 };
