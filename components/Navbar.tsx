@@ -63,7 +63,7 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-2xl lg:text-2xl">
+        <Link href="/" className="btn btn-ghost text-xl lg:text-2xl">
           MGC
         </Link>
       </div>
