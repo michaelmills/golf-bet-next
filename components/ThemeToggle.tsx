@@ -17,7 +17,7 @@ export const ThemeToggle = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    const currentTheme = theme === "synthwave" ? "corporate" : "synthwave";
+    const currentTheme = theme === "dark" ? "corporate" : "dark";
     setTheme(currentTheme);
   };
 
@@ -29,7 +29,7 @@ export const ThemeToggle = () => {
           type="checkbox"
           className="theme-controller"
           onChange={toggleTheme}
-          checked={theme === "synthwave"}
+          checked={theme === "dark"}
         />
 
         {/* sun icon */}
