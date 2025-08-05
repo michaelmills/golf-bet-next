@@ -6,18 +6,30 @@ export const ThemeToggle = () => {
   const [theme, setTheme] = useState<string>();
 
   useEffect(() => {
-    setTheme(localStorage.getItem("theme") || "corporate");
+    const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme) {
+      storeTheme(storedTheme);
+      setTheme(storedTheme);
+    } else if (systemSettingDark.matches) {
+      setTheme("dracula");
+    }
   }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined" && theme) {
-      localStorage.setItem("theme", theme);
       document.querySelector("html")?.setAttribute("data-theme", theme!);
     }
   }, [theme]);
 
+  const storeTheme = (theme: string) => {
+    localStorage.setItem("theme", theme);
+  };
+
   const toggleTheme = () => {
-    const currentTheme = theme === "dark" ? "corporate" : "dark";
+    const currentTheme = theme === "dracula" ? "corporate" : "dracula";
+    storeTheme(currentTheme);
     setTheme(currentTheme);
   };
 
@@ -29,12 +41,12 @@ export const ThemeToggle = () => {
           type="checkbox"
           className="theme-controller"
           onChange={toggleTheme}
-          checked={theme === "dark"}
+          checked={theme === "dracula"}
         />
 
         {/* sun icon */}
         <svg
-          className="swap-off size-6 md:size-8 fill-current"
+          className="swap-off size-6 fill-current md:size-8"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -43,7 +55,7 @@ export const ThemeToggle = () => {
 
         {/* moon icon */}
         <svg
-          className="swap-on size-6 md:size-8 fill-current"
+          className="swap-on size-6 fill-current md:size-8"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >

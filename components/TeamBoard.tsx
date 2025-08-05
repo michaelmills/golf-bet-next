@@ -16,13 +16,13 @@ export const TeamBoard = forwardRef<HTMLDialogElement, TeamBoardProps>(
           <button>close</button>
         </form>
         <div className="modal-box rounded-3xl text-base-content lg:max-w-[700px]">
-          <div className="font-semibold text-lg lg:text-xl underline underline-offset-8 text-center mb-2">
+          <div className="mb-2 text-center text-lg font-semibold underline underline-offset-8 lg:text-xl">
             {name}
           </div>
           <div className="overflow-x-auto">
-            <table className="table table-auto table-zebra table-sm lg:table-lg table-pin-cols">
+            <table className="table-pin-cols table table-auto table-zebra table-sm lg:table-lg">
               <thead>
-                <tr className="font-bold text-center lg:text-lg">
+                <tr className="text-center font-bold lg:text-lg">
                   <th className="text-left">Player</th>
                   <td>Thru</td>
                   <td>Start</td>
@@ -37,7 +37,7 @@ export const TeamBoard = forwardRef<HTMLDialogElement, TeamBoardProps>(
                 {members.map((member) => (
                   <tr
                     key={member.name}
-                    className={`font-regular text-center text-base ${member.isActive && "text-green-700"} ${member.isCut && "text-rose-600"}`}
+                    className={`font-regular ${member.isActive && "text-green-700"} ${member.isCut && "text-rose-600"} text-center text-base`}
                   >
                     <th className="text-left">{member.name}</th>
                     <td>{member.isActive ? member.thru : "-"}</td>

@@ -3,11 +3,18 @@
 @plugin "daisyui" {
   themes:
     corporate --default,
-    night --prefersdark;
+    dracula --prefersdark;
 }
 
 :root {
   --background: var(--color-base-200);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 body {

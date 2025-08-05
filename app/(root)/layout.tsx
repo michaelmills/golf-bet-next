@@ -11,8 +11,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="flex flex-col h-dvh w-dvw bg-base-200">
-      <div className="mb-1">
+    <main className="flex h-dvh w-dvw flex-col bg-base-200">
+      <div className="">
         <Navbar />
       </div>
       {children}

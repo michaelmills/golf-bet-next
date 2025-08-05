@@ -24,16 +24,16 @@ export const TeamRankBox = ({ rank, team, handleClickAction }: RankProps) => {
       }}
     >
       <div
-        className={`rounded-lg bg-base-100 p-4 ${rank === 0 ? "mt-1 lg:mt-3" : ""} h-max border-2 border-base-300 text-base-content`}
+        className={`h-max rounded-lg border-1 border-base-300 bg-base-100 p-4 text-base-content`}
         onClick={() => handleClickAction(team.name)}
       >
-        <div className="flex flex-row items-center min-h-full">
-          <div className="text-2xl font-bold text-left items-center grow-0 shrink-0 min-w-8">
+        <div className="flex min-h-full flex-row items-center">
+          <div className="min-w-8 shrink-0 grow-0 items-center text-left text-2xl font-bold">
             {rank + 1}
           </div>
           <div className="flex grow items-center gap-3">
             <div className="avatar">
-              <div className="mask mask-circle h-16 w-16">
+              <div className="mask h-16 w-16 mask-circle">
                 {team.name.includes("Mauro") ? (
                   <img src="/IMG_0289.jpeg" alt="Mauro" />
                 ) : (
@@ -47,10 +47,10 @@ export const TeamRankBox = ({ rank, team, handleClickAction }: RankProps) => {
               </div>
             </div>
             <div>
-              <div className="min-w-48 text-xl md:text-2xl font-medium">
+              <div className="min-w-48 text-xl font-medium md:text-2xl">
                 {team.name}
               </div>
-              <div className="uppercase text-xs md:text-sm font-medium proportional-nums">
+              <div className="text-xs font-medium uppercase proportional-nums md:text-sm">
                 <span className="text-green-600/90">
                   {team.activeMemberCount} active
                 </span>
@@ -61,7 +61,7 @@ export const TeamRankBox = ({ rank, team, handleClickAction }: RankProps) => {
               </div>
             </div>
           </div>
-          <div className="shrink-0 min-w-10 pr-4 text-right font-medium text-xl md:text-2xl">
+          <div className="min-w-10 shrink-0 pr-4 text-right text-xl font-medium md:text-2xl">
             {toDisplayScore(team.score)}
           </div>
         </div>

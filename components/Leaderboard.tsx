@@ -13,19 +13,17 @@ export const Leaderboard = ({ teams }: LeaderboardProps) => {
 
   return (
     <>
-      <div className="pb-2 overflow-hidden">
-        <div className="w-screen md:w-2/3 h-full max-h-full justify-center mx-auto space-y-2 overflow-y-auto no-scrollbar">
-          {teams.map((team, i) => (
-            <TeamRankBox
-              key={team.name}
-              rank={i}
-              team={team}
-              handleClickAction={(teamName: string) => {
-                refs[i].current?.showModal();
-              }}
-            />
-          ))}
-        </div>
+      <div className="mx-auto h-max w-screen justify-center space-y-1 md:w-2/3">
+        {teams.map((team, i) => (
+          <TeamRankBox
+            key={team.name}
+            rank={i}
+            team={team}
+            handleClickAction={(teamName: string) => {
+              refs[i].current?.showModal();
+            }}
+          />
+        ))}
       </div>
 
       {teams.map((team, i) => (

@@ -93,12 +93,12 @@ const Tournament = async ({ params }: { params: Promise<{ id: string }> }) => {
   return (
     <>
       {tournamentInfo && (
-        <>
-          <div className="w-full md:w-2/3 h-min p-4 mb-1 mx-auto bg-base-100 rounded-lg">
+        <div className="no-scrollbar overflow-y-auto">
+          <div className="mx-auto my-1 h-min w-full rounded-lg border-1 border-base-300 bg-base-100 p-4 md:w-2/3">
             <TournamentInfo {...tournamentInfo} />
           </div>
           <Leaderboard teams={sorted} />
-        </>
+        </div>
       )}
     </>
   );

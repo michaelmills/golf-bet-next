@@ -6,19 +6,19 @@ import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
   return (
-    <div className="navbar min-h-0 h-10 md:h-14 text-neutral-content bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80%">
+    <div className="navbar h-10 min-h-0 bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80% text-neutral-content md:h-14">
       <div className="navbar-start">
         <div className="dropdown">
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost px-2 lg:hidden"
+            className="btn px-2 btn-ghost lg:hidden"
           >
             <Menu />
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content bg-neutral rounded-box z-1 mt-3 w-max p-2 shadow"
+            className="dropdown-content menu z-1 mt-3 w-max menu-lg rounded-box bg-neutral p-2 shadow"
           >
             <li>
               <Link
@@ -63,22 +63,22 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost text-xl lg:text-2xl">
+        <Link href="/" className="btn text-xl btn-ghost lg:text-2xl">
           MGC
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <div className="dropdown dropdown-hover dropdown-end">
+        <div className="dropdown-hover dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost rounded-field lg:text-lg"
+            className="btn rounded-field btn-ghost lg:text-lg"
           >
             Leaderboard
           </div>
           <ul
             tabIndex={0}
-            className="menu dropdown-content lg:text-lg bg-neutral rounded-box z-1 w-52 p-2 pt-4 shadow-sm"
+            className="dropdown-content menu z-1 w-52 rounded-box bg-neutral p-2 pt-4 shadow-sm lg:text-lg"
           >
             <li>
               <Link
@@ -109,12 +109,13 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="/rules" className="btn btn-ghost rounded-field lg:text-lg">
+        <Link href="/rules" className="btn rounded-field btn-ghost lg:text-lg">
           Rules
         </Link>
       </div>
       <div className="navbar-end">
         <ThemeToggle />
+        <></>
       </div>
     </div>
   );
