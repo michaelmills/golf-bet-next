@@ -1,12 +1,45 @@
 "use client";
 
+import clsx from "clsx";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
 export const Navbar = () => {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    const controlNav = () => {
+      let currentScrollPos = window.scrollY;
+      if (prevScrollPos < currentScrollPos && currentScrollPos > 15) {
+        setVisible(false);
+      } else if (currentScrollPos < 15) {
+        setVisible(true);
+      }
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", controlNav);
+
+    return () => window.removeEventListener("scroll", controlNav);
+  }, []);
+
   return (
-    <div className="navbar h-10 min-h-0 bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80% text-neutral-content md:h-14">
+    <div
+      id="navbar"
+      className={clsx(
+        "fixed navbar h-10 min-h-0 bg-linear-to-r from-emerald-700 from-10% to-emerald-950 to-80% text-neutral-content transition-transform duration-300 lg:h-14 z-100",
+        {
+          "ease-out": visible,
+          "ease-in": !visible,
+          "-translate-y-full": !visible,
+          "translate-y-0": visible,
+        },
+      )}
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <div

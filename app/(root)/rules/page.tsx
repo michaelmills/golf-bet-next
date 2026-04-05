@@ -2,8 +2,8 @@ import { FlagIcon } from "@heroicons/react/24/solid";
 
 const Rules = async () => {
   return (
-    <div className="mx-auto flex flex-col gap-10 text-base-content">
-      <div className="card mt-4 w-96 bg-base-100 shadow-sm lg:w-full">
+    <div className="mx-auto mt-1 flex flex-col gap-4 text-base-content">
+      <div className="card w-full bg-base-100 shadow-sm">
         <div className="card-body">
           <h2 className="card-title uppercase">Draft</h2>
           <ul className="list-none lg:text-lg">
@@ -23,7 +23,7 @@ const Rules = async () => {
           </ul>
         </div>
       </div>
-      <div className="card w-96 bg-base-100 shadow-sm lg:w-full">
+      <div className="card bg-base-100 shadow-sm">
         <div className="card-body">
           <h2 className="card-title uppercase">Game</h2>
           <ul className="list-none lg:text-lg">

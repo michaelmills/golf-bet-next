@@ -1,4 +1,5 @@
 declare interface TeamMember {
+  playerId: string;
   name: string;
   isCut: boolean;
   isActive: boolean;

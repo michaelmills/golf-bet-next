@@ -1,0 +1,4324 @@
+{
+  "orgId": "1",
+  "year": "2025",
+  "tournId": "100",
+  "name": "The Open Championship",
+  "purse": { "$numberInt": "17000000" },
+  "fedexCupPoints": { "$numberInt": "750" },
+  "date": {
+    "start": { "$date": { "$numberLong": "1752710400000" } },
+    "end": { "$date": { "$numberLong": "1752969600000" } },
+    "weekNumber": "29"
+  },
+  "format": "stroke",
+  "status": "Official",
+  "currentRound": { "$numberInt": "4" },
+  "timeZone": "Europe/London",
+  "courses": [
+    {
+      "courseId": "885",
+      "courseName": "Royal Portrush Golf Club",
+      "host": "Yes",
+      "location": { "country": "NIR", "state": null, "city": "Portrush" },
+      "parFrontNine": "36",
+      "parBackNine": "35",
+      "parTotal": "71",
+      "holes": [
+        { "holeId": { "$numberInt": "1" }, "par": "4" },
+        { "holeId": { "$numberInt": "2" }, "par": "5" },
+        { "holeId": { "$numberInt": "3" }, "par": "3" },
+        { "holeId": { "$numberInt": "4" }, "par": "4" },
+        { "holeId": { "$numberInt": "5" }, "par": "4" },
+        { "holeId": { "$numberInt": "6" }, "par": "3" },
+        { "holeId": { "$numberInt": "7" }, "par": "5" },
+        { "holeId": { "$numberInt": "8" }, "par": "4" },
+        { "holeId": { "$numberInt": "9" }, "par": "4" },
+        { "holeId": { "$numberInt": "10" }, "par": "4" },
+        { "holeId": { "$numberInt": "11" }, "par": "4" },
+        { "holeId": { "$numberInt": "12" }, "par": "5" },
+        { "holeId": { "$numberInt": "13" }, "par": "3" },
+        { "holeId": { "$numberInt": "14" }, "par": "4" },
+        { "holeId": { "$numberInt": "15" }, "par": "4" },
+        { "holeId": { "$numberInt": "16" }, "par": "3" },
+        { "holeId": { "$numberInt": "17" }, "par": "4" },
+        { "holeId": { "$numberInt": "18" }, "par": "4" }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "lastName": "Scheffler",
+      "firstName": "Scottie",
+      "playerId": "46046",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752743340000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752935700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753018200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "English",
+      "firstName": "Harris",
+      "playerId": "34099",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762060000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752830400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752933900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753017000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Gotterup",
+      "firstName": "Chris",
+      "playerId": "59095",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752736440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752933300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753017000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Clark",
+      "firstName": "Wyndham",
+      "playerId": "51766",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752848460000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752920400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753014300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fitzpatrick",
+      "firstName": "Matt",
+      "playerId": "40098",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752935700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753017600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Li",
+      "firstName": "Haotong",
+      "playerId": "35296",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752734460000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838920000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752935100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753018200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "MacIntyre",
+      "firstName": "Robert",
+      "playerId": "52215",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752828420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752933900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:40pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753015200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Schauffele",
+      "firstName": "Xander",
+      "playerId": "48081",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742680000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:40pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752928800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753016400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "McIlroy",
+      "firstName": "Rory",
+      "playerId": "28237",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752761400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752931800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753017600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "DeChambeau",
+      "firstName": "Bryson",
+      "playerId": "47959",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752828420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752917100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753007400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Conners",
+      "firstName": "Corey",
+      "playerId": "39997",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752848460000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752914100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753011900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Harman",
+      "firstName": "Brian",
+      "playerId": "27644",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752935100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753014300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Henley",
+      "firstName": "Russell",
+      "playerId": "34098",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752759420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752923700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:50pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753015800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fowler",
+      "firstName": "Rickie",
+      "playerId": "32102",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752750540000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752927300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753005300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "H\u00f8jgaard",
+      "firstName": "Nicolai",
+      "playerId": "52453",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752730500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752834360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752932700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:50pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753015800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Svensson",
+      "firstName": "Jesper",
+      "playerId": "57586",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749220000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752817560000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752919800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753006800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Matsuyama",
+      "firstName": "Hideki",
+      "playerId": "32839",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752914700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753008000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fleetwood",
+      "firstName": "Tommy",
+      "playerId": "30911",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752761400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752926700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753008600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Parry",
+      "firstName": "John",
+      "playerId": "28723",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753840000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822180000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752918300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753009200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Rose",
+      "firstName": "Justin",
+      "playerId": "22405",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752828420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752930000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753012500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "H\u00f8jgaard",
+      "firstName": "Rasmus",
+      "playerId": "52686",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752934500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:40pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753015200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hatton",
+      "firstName": "Tyrrell",
+      "playerId": "34363",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752759420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "3:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752934500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "2:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753016400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "McNealy",
+      "firstName": "Maverick",
+      "playerId": "46442",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752917700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753004100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Spaun",
+      "firstName": "J.J.",
+      "playerId": "39324",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742680000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752921600000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753009200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Glover",
+      "firstName": "Lucas",
+      "playerId": "25900",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762720000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831060000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752926100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753010700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Johnson",
+      "firstName": "Dustin",
+      "playerId": "30925",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752734460000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838920000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752921600000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753011300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "\u00c5berg",
+      "firstName": "Ludvig",
+      "playerId": "52955",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752930000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753013100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hall",
+      "firstName": "Harry",
+      "playerId": "57975",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752756480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752930600000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753012500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Lindell",
+      "firstName": "Oliver",
+      "playerId": "48237",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752746640000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752928200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753013700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Berger",
+      "firstName": "Daniel",
+      "playerId": "40026",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752823500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752924300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753003500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Bhatia",
+      "firstName": "Akshay",
+      "playerId": "56630",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752741360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752925500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753006200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Bradley",
+      "firstName": "Keegan",
+      "playerId": "33141",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752823500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752932700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753009800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Reitan",
+      "firstName": "Kristoffer",
+      "playerId": "49855",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752739380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752843840000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:50pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752929400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753013100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Garcia",
+      "firstName": "Sergio",
+      "playerId": "21209",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752819540000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:00am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752919200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753001700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Rai",
+      "firstName": "Aaron",
+      "playerId": "46414",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752756480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752927300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753002900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Rahm",
+      "firstName": "Jon",
+      "playerId": "46970",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742680000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752921000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753006200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Thomas",
+      "firstName": "Justin",
+      "playerId": "33448",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752761400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752926700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753008600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Bezuidenhout",
+      "firstName": "Christiaan",
+      "playerId": "45522",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752930600000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753009800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Westwood",
+      "firstName": "Lee",
+      "playerId": "20396",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752736440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752931200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753011900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Lowry",
+      "firstName": "Shane",
+      "playerId": "33204",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752743340000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752921000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:00am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752998400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Spieth",
+      "firstName": "Jordan",
+      "playerId": "34046",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752922800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753000200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kokrak",
+      "firstName": "Jason",
+      "playerId": "30944",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752832380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752926100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753002900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kanaya",
+      "firstName": "Takumi",
+      "playerId": "47917",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752844500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752915300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753004700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kimsey",
+      "firstName": "Nathan",
+      "playerId": "45426",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752832380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752917100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753007400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Jordan",
+      "firstName": "Matthew",
+      "playerId": "55955",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842220000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:50pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752929400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753000800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Detry",
+      "firstName": "Thomas",
+      "playerId": "33653",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752736440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752916500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:05am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753002300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Stenson",
+      "firstName": "Henrik",
+      "playerId": "21528",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752738420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:05am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752915900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753004100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Smith",
+      "firstName": "Jordan",
+      "playerId": "46464",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752734460000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838920000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752931800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753004700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Burns",
+      "firstName": "Sam",
+      "playerId": "47504",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742020000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752846480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752931200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753005300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Lawrence",
+      "firstName": "Thriston",
+      "playerId": "45523",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752757440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752825780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752917700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753006800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Wallace",
+      "firstName": "Matt",
+      "playerId": "48887",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751860000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:45pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752925500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753013700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Saddier",
+      "firstName": "Adrien",
+      "playerId": "34371",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752739380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752843840000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752915300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752999600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Straka",
+      "firstName": "Sepp",
+      "playerId": "49960",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752741360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752914700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:05am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753002300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Leishman",
+      "firstName": "Marc",
+      "playerId": "26851",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747960000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752816900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:30pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752928200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753010700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Im",
+      "firstName": "Sungjae",
+      "playerId": "39971",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752823500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752924900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "12:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753011300000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Mickelson",
+      "firstName": "Phil",
+      "playerId": "01810",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752837600000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752922200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752997200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Vegas",
+      "firstName": "Jhonattan",
+      "playerId": "27064",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762720000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831060000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752922200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "10:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753003500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Finau",
+      "firstName": "Tony",
+      "playerId": "29725",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762060000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752830400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "2:55pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752933300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "11:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753008000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Rozner",
+      "firstName": "Antoine",
+      "playerId": "46646",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752757440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752825780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752923700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752999000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Leonard",
+      "firstName": "Justin",
+      "playerId": "10860",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752757440000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752825780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:45am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752918300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:55am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753001700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Burmester",
+      "firstName": "Dean",
+      "playerId": "33974",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752752520000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820860000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:35pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752924900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752997200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Langasque",
+      "firstName": "Romain",
+      "playerId": "37250",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752755820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:25pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752924300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753000200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kawamoto",
+      "firstName": "Riki",
+      "playerId": "51366",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752920400000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752996600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Novak",
+      "firstName": "Andrew",
+      "playerId": "51997",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751860000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:00am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752919200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752997800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hovland",
+      "firstName": "Viktor",
+      "playerId": "46717",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:59pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752760740000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752829080000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "12:00pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752922800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752999000000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Johnston",
+      "firstName": "Ryggs",
+      "playerId": "63617",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745320000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "1:40pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752928800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752999600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Molinari",
+      "firstName": "Francesco",
+      "playerId": "25198",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749220000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752817560000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "11:10am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752919800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:40am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1753000800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Olesen",
+      "firstName": "Jacob Skov",
+      "playerId": "55965",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752732480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836940000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752916500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "9:00am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752998400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Schmid",
+      "firstName": "Matti",
+      "playerId": "48867",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745320000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "9:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752914100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752996600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Soderberg",
+      "firstName": "Sebastian",
+      "playerId": "46405",
+      "courseId": "885",
+      "status": "complete",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752738420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "3" },
+          "teeTime": "10:05am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752915900000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "4" },
+          "teeTime": "8:50am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752997800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Manassero",
+      "firstName": "Matteo",
+      "playerId": "33199",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747960000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752816900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hillier",
+      "firstName": "Daniel",
+      "playerId": "49813",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818220000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hoshino",
+      "firstName": "Rikuya",
+      "playerId": "47056",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752752520000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820860000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Niemann",
+      "firstName": "Joaquin",
+      "playerId": "45486",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Day",
+      "firstName": "Jason",
+      "playerId": "28089",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752732480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836940000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fox",
+      "firstName": "Ryan",
+      "playerId": "29936",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845160000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Griffin",
+      "firstName": "Ben",
+      "playerId": "54591",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752741360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752845820000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Suh",
+      "firstName": "Justin",
+      "playerId": "50493",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752746640000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Johnson",
+      "firstName": "Zach",
+      "playerId": "24024",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818220000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fang",
+      "firstName": "Ethan",
+      "playerId": "68932",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752750540000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818880000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Smylie",
+      "firstName": "Elvis",
+      "playerId": "54185",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752819540000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Si Woo",
+      "playerId": "37455",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753180000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752821520000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "McCarty",
+      "firstName": "Matt",
+      "playerId": "59141",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752754500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822840000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hidalgo Portillo",
+      "firstName": "Angel",
+      "playerId": "64594",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752754500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822840000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Ortiz",
+      "firstName": "Carlos",
+      "playerId": "33667",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752826440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Taylor",
+      "firstName": "Nick",
+      "playerId": "25493",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762060000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752830400000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Tom",
+      "playerId": "55182",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752762720000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831060000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Campbell",
+      "firstName": "Brian",
+      "playerId": "46443",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752763380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831720000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Adam",
+      "firstName": "Cameron",
+      "playerId": "67145",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752832380000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Bloor",
+      "firstName": "George",
+      "playerId": "57353",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752765360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "McKibbin",
+      "firstName": "Tom",
+      "playerId": "50823",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752730500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752834360000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Pendrith",
+      "firstName": "Taylor",
+      "playerId": "40250",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752732480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836940000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Greyserman",
+      "firstName": "Max",
+      "playerId": "51977",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838260000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Yu",
+      "firstName": "Kevin",
+      "playerId": "45242",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840240000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Guerrier",
+      "firstName": "Julien",
+      "playerId": "28340",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840240000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Cantlay",
+      "firstName": "Patrick",
+      "playerId": "35450",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752841560000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "McCarthy",
+      "firstName": "Denny",
+      "playerId": "47993",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744660000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849120000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Axelsen",
+      "firstName": "John",
+      "playerId": "47850",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745980000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752850440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Cink",
+      "firstName": "Stewart",
+      "playerId": "20229",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747960000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752816900000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kim",
+      "firstName": "Michael",
+      "playerId": "39975",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753840000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822180000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Catlin",
+      "firstName": "John",
+      "playerId": "45734",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752763380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831720000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Young",
+      "firstName": "Daniel",
+      "playerId": "48061",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833040000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Song",
+      "firstName": "Young-han",
+      "playerId": "36521",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752765360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Farrell",
+      "firstName": "OJ",
+      "playerId": "58583",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752765360000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833700000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Penge",
+      "firstName": "Marco",
+      "playerId": "51003",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836280000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Norgaard",
+      "firstName": "Niklas",
+      "playerId": "35706",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838260000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Herbert",
+      "firstName": "Lucas",
+      "playerId": "39058",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735120000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752839580000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Young",
+      "firstName": "Cameron",
+      "playerId": "57366",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752841560000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Olesen",
+      "firstName": "Thorbj\u00f8rn",
+      "playerId": "33968",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842220000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Echavarria",
+      "firstName": "Nico",
+      "playerId": "51349",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744660000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849120000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Naidoo",
+      "firstName": "Dylan",
+      "playerId": "47505",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745980000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752850440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Sandborg",
+      "firstName": "Jesper",
+      "playerId": "48629",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752746640000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851100000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Pavon",
+      "firstName": "Matthieu",
+      "playerId": "48153",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751860000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820200000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Cauley",
+      "firstName": "Bud",
+      "playerId": "34021",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753840000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822180000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Norris",
+      "firstName": "Shaun",
+      "playerId": "26328",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752754500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752822840000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kirk",
+      "firstName": "Chris",
+      "playerId": "30926",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752826440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Lee",
+      "firstName": "Min Woo",
+      "playerId": "37378",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752759420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752827760000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "An",
+      "firstName": "Byeong Hun",
+      "playerId": "33948",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:30am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733800000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:31pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752838260000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Potgieter",
+      "firstName": "Aldrich",
+      "playerId": "63343",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742020000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752846480000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Reed",
+      "firstName": "Patrick",
+      "playerId": "34360",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:31am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744660000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:32pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849120000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Kaewkanjana",
+      "firstName": "Sadom",
+      "playerId": "48018",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851760000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Canter",
+      "firstName": "Laurie",
+      "playerId": "34362",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752751200000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752819540000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Thompson",
+      "firstName": "Davis",
+      "playerId": "58168",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:42pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752752520000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:41am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752820860000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Knipes",
+      "firstName": "Curtis",
+      "playerId": "56551",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833040000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Oosthuizen",
+      "firstName": "Louis",
+      "playerId": "26329",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752835620000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hastings",
+      "firstName": "Justin",
+      "playerId": "66248",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836280000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Clarke",
+      "firstName": "Darren",
+      "playerId": "19825",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735120000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752839580000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Jakubcik",
+      "firstName": "Filip",
+      "playerId": "57257",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:36am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737760000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:37pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842220000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Jaeger",
+      "firstName": "Stephan",
+      "playerId": "36799",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752738420000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752842880000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Brown",
+      "firstName": "Daniel",
+      "playerId": "57259",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749880000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818220000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Theegala",
+      "firstName": "Sahith",
+      "playerId": "51634",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "1:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752756480000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "8:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752824820000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Poston",
+      "firstName": "J.T.",
+      "playerId": "49771",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752758100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752826440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hughes",
+      "firstName": "Mackenzie",
+      "playerId": "35506",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:25am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752737100000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:26pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752841560000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Koepka",
+      "firstName": "Brooks",
+      "playerId": "36689",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752742020000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:48pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752846480000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Morikawa",
+      "firstName": "Collin",
+      "playerId": "50525",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:09am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752743340000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:10pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752847800000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Fichardt",
+      "firstName": "Darren",
+      "playerId": "20721",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:53am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745980000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:54pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752850440000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Jones",
+      "firstName": "Frazer",
+      "playerId": "68984",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752763380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752831720000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Luck",
+      "firstName": "Curtis",
+      "playerId": "37380",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "4:05pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752764700000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:04am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752833040000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Smith",
+      "firstName": "Cameron",
+      "playerId": "35891",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:57am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731820000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:58am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752836280000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Peake",
+      "firstName": "Ryan",
+      "playerId": "35106",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752837600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Walters",
+      "firstName": "Justin",
+      "playerId": "27140",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752844500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Teder",
+      "firstName": "Richard",
+      "playerId": "67514",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:42am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752745320000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:43pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752849780000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Zheng",
+      "firstName": "Sampson",
+      "playerId": "57504",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:15am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752747300000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "4:16pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752851760000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Scott",
+      "firstName": "Adam",
+      "playerId": "24502",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:09pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752750540000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:08am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752818880000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Imahira",
+      "firstName": "Shugo",
+      "playerId": "32775",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753180000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752821520000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Harrington",
+      "firstName": "Padraig",
+      "playerId": "20766",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:35am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752730500000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:26am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752834360000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Riley",
+      "firstName": "Davis",
+      "playerId": "47995",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735120000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752839580000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Akutsu",
+      "firstName": "Mikiya",
+      "playerId": "35752",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "8:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752735780000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "1:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752840240000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Couvra",
+      "firstName": "Martin",
+      "playerId": "60073",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:03am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752739380000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:04pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752843840000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Graham",
+      "firstName": "Connor",
+      "playerId": "47956",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752749220000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752817560000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Cave",
+      "firstName": "Sebastian",
+      "playerId": "68934",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "12:53pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752753180000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "7:52am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752821520000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Migliozzi",
+      "firstName": "Guido",
+      "playerId": "39834",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752835620000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Hoge",
+      "firstName": "Tom",
+      "playerId": "35532",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "10:20am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752744000000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "3:21pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752848460000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Choi",
+      "firstName": "K.J.",
+      "playerId": "24357",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "6:46am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752731160000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "11:47am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752835620000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "van Tonder",
+      "firstName": "Daniel",
+      "playerId": "35181",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": false,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "7:19am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752733140000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "12:20pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752837600000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    },
+    {
+      "lastName": "Newman",
+      "firstName": "Bryan",
+      "playerId": "68111",
+      "courseId": "885",
+      "status": "cut",
+      "isAmateur": true,
+      "teeTimes": [
+        {
+          "roundId": { "$numberInt": "1" },
+          "teeTime": "9:14am",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752740040000" } },
+          "startingHole": { "$numberInt": "1" }
+        },
+        {
+          "roundId": { "$numberInt": "2" },
+          "teeTime": "2:15pm",
+          "teeTimeTimestamp": { "$date": { "$numberLong": "1752844500000" } },
+          "startingHole": { "$numberInt": "1" }
+        }
+      ]
+    }
+  ],
+  "timestamp": { "$date": { "$numberLong": "1753048803442" } }
+}
+

@@ -6,6 +6,8 @@
     dracula --prefersdark;
 }
 
+@custom-variant dark (&:where([data-theme=dracula], [data-theme=dracula] *));
+
 :root {
   --background: var(--color-base-200);
 }

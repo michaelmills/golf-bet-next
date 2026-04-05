@@ -1,0 +1,434 @@
+[
+  {
+    "orgId": "1",
+    "tournId": "100",
+    "year": "2025",
+    "playerId": "48081",
+    "lastName": "Schauffele",
+    "firstName": "Xander",
+    "roundId": { "$numberInt": "1" },
+    "startingHole": { "$numberInt": "1" },
+    "roundComplete": true,
+    "courseId": "885",
+    "currentHole": { "$numberInt": "18" },
+    "currentRoundScore": "E",
+    "holes": {
+      "1": {
+        "holeId": { "$numberInt": "1" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "2": {
+        "holeId": { "$numberInt": "2" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "5" }
+      },
+      "3": {
+        "holeId": { "$numberInt": "3" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "4": {
+        "holeId": { "$numberInt": "4" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "5": {
+        "holeId": { "$numberInt": "5" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "6": {
+        "holeId": { "$numberInt": "6" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "3" }
+      },
+      "7": {
+        "holeId": { "$numberInt": "7" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "5" }
+      },
+      "8": {
+        "holeId": { "$numberInt": "8" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "9": {
+        "holeId": { "$numberInt": "9" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "10": {
+        "holeId": { "$numberInt": "10" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "11": {
+        "holeId": { "$numberInt": "11" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "4" }
+      },
+      "12": {
+        "holeId": { "$numberInt": "12" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "5" }
+      },
+      "13": {
+        "holeId": { "$numberInt": "13" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "14": {
+        "holeId": { "$numberInt": "14" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "15": {
+        "holeId": { "$numberInt": "15" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "4" }
+      },
+      "16": {
+        "holeId": { "$numberInt": "16" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "17": {
+        "holeId": { "$numberInt": "17" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "18": {
+        "holeId": { "$numberInt": "18" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      }
+    },
+    "totalShots": { "$numberInt": "71" },
+    "timestamp": { "$date": { "$numberLong": "1752764177729" } }
+  },
+  {
+    "orgId": "1",
+    "tournId": "100",
+    "year": "2025",
+    "playerId": "48081",
+    "lastName": "Schauffele",
+    "firstName": "Xander",
+    "roundId": { "$numberInt": "2" },
+    "startingHole": { "$numberInt": "1" },
+    "roundComplete": true,
+    "courseId": "885",
+    "currentHole": { "$numberInt": "18" },
+    "currentRoundScore": "-2",
+    "holes": {
+      "1": {
+        "holeId": { "$numberInt": "1" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "2": {
+        "holeId": { "$numberInt": "2" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "5" }
+      },
+      "3": {
+        "holeId": { "$numberInt": "3" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "4": {
+        "holeId": { "$numberInt": "4" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "5": {
+        "holeId": { "$numberInt": "5" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "6": {
+        "holeId": { "$numberInt": "6" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "7": {
+        "holeId": { "$numberInt": "7" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "5" }
+      },
+      "8": {
+        "holeId": { "$numberInt": "8" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "9": {
+        "holeId": { "$numberInt": "9" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "10": {
+        "holeId": { "$numberInt": "10" },
+        "holeScore": { "$numberInt": "6" },
+        "par": { "$numberInt": "4" }
+      },
+      "11": {
+        "holeId": { "$numberInt": "11" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "12": {
+        "holeId": { "$numberInt": "12" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "5" }
+      },
+      "13": {
+        "holeId": { "$numberInt": "13" },
+        "holeScore": { "$numberInt": "2" },
+        "par": { "$numberInt": "3" }
+      },
+      "14": {
+        "holeId": { "$numberInt": "14" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "15": {
+        "holeId": { "$numberInt": "15" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "16": {
+        "holeId": { "$numberInt": "16" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "17": {
+        "holeId": { "$numberInt": "17" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "18": {
+        "holeId": { "$numberInt": "18" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "4" }
+      }
+    },
+    "totalShots": { "$numberInt": "69" },
+    "timestamp": { "$date": { "$numberLong": "1752866653172" } }
+  },
+  {
+    "orgId": "1",
+    "tournId": "100",
+    "year": "2025",
+    "playerId": "48081",
+    "lastName": "Schauffele",
+    "firstName": "Xander",
+    "roundId": { "$numberInt": "3" },
+    "startingHole": { "$numberInt": "1" },
+    "roundComplete": true,
+    "courseId": "885",
+    "currentHole": { "$numberInt": "18" },
+    "currentRoundScore": "-5",
+    "holes": {
+      "1": {
+        "holeId": { "$numberInt": "1" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "2": {
+        "holeId": { "$numberInt": "2" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "5" }
+      },
+      "3": {
+        "holeId": { "$numberInt": "3" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "4": {
+        "holeId": { "$numberInt": "4" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "4" }
+      },
+      "5": {
+        "holeId": { "$numberInt": "5" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "6": {
+        "holeId": { "$numberInt": "6" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "7": {
+        "holeId": { "$numberInt": "7" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "5" }
+      },
+      "8": {
+        "holeId": { "$numberInt": "8" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "9": {
+        "holeId": { "$numberInt": "9" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "10": {
+        "holeId": { "$numberInt": "10" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "11": {
+        "holeId": { "$numberInt": "11" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "12": {
+        "holeId": { "$numberInt": "12" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "5" }
+      },
+      "13": {
+        "holeId": { "$numberInt": "13" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "14": {
+        "holeId": { "$numberInt": "14" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "15": {
+        "holeId": { "$numberInt": "15" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "16": {
+        "holeId": { "$numberInt": "16" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "17": {
+        "holeId": { "$numberInt": "17" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "18": {
+        "holeId": { "$numberInt": "18" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      }
+    },
+    "totalShots": { "$numberInt": "66" },
+    "timestamp": { "$date": { "$numberLong": "1752945306513" } }
+  },
+  {
+    "orgId": "1",
+    "tournId": "100",
+    "year": "2025",
+    "playerId": "48081",
+    "lastName": "Schauffele",
+    "firstName": "Xander",
+    "roundId": { "$numberInt": "4" },
+    "startingHole": { "$numberInt": "1" },
+    "roundComplete": true,
+    "courseId": "885",
+    "currentHole": { "$numberInt": "18" },
+    "currentRoundScore": "-3",
+    "holes": {
+      "1": {
+        "holeId": { "$numberInt": "1" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "2": {
+        "holeId": { "$numberInt": "2" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "5" }
+      },
+      "3": {
+        "holeId": { "$numberInt": "3" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "4": {
+        "holeId": { "$numberInt": "4" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "5": {
+        "holeId": { "$numberInt": "5" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "6": {
+        "holeId": { "$numberInt": "6" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "7": {
+        "holeId": { "$numberInt": "7" },
+        "holeScore": { "$numberInt": "5" },
+        "par": { "$numberInt": "5" }
+      },
+      "8": {
+        "holeId": { "$numberInt": "8" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "9": {
+        "holeId": { "$numberInt": "9" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "4" }
+      },
+      "10": {
+        "holeId": { "$numberInt": "10" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "11": {
+        "holeId": { "$numberInt": "11" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "12": {
+        "holeId": { "$numberInt": "12" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "5" }
+      },
+      "13": {
+        "holeId": { "$numberInt": "13" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "14": {
+        "holeId": { "$numberInt": "14" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "15": {
+        "holeId": { "$numberInt": "15" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "16": {
+        "holeId": { "$numberInt": "16" },
+        "holeScore": { "$numberInt": "3" },
+        "par": { "$numberInt": "3" }
+      },
+      "17": {
+        "holeId": { "$numberInt": "17" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      },
+      "18": {
+        "holeId": { "$numberInt": "18" },
+        "holeScore": { "$numberInt": "4" },
+        "par": { "$numberInt": "4" }
+      }
+    },
+    "totalShots": { "$numberInt": "68" },
+    "timestamp": { "$date": { "$numberLong": "1753031886238" } }
+  }
+]

@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import { TeamBoard } from "./TeamBoard";
 import { TeamRankBox } from "./TeamRankBox";
 
 interface LeaderboardProps {
@@ -9,31 +7,34 @@ interface LeaderboardProps {
 }
 
 export const Leaderboard = ({ teams }: LeaderboardProps) => {
-  const refs = teams.map((item) => React.createRef<HTMLDialogElement>());
+  // const refs = teams.map((_) => React.createRef<HTMLDialogElement>());
+  // const refs = teams.map((_) => React.createRef<HTMLDivElement>());
 
   return (
     <>
       <div className="mx-auto h-max w-screen justify-center space-y-1 md:w-2/3">
         {teams.map((team, i) => (
-          <TeamRankBox
-            key={team.name}
-            rank={i}
-            team={team}
-            handleClickAction={(teamName: string) => {
-              refs[i].current?.showModal();
-            }}
-          />
+          <div key={team.name}>
+            <TeamRankBox
+              key={team.name}
+              rank={i}
+              team={team}
+              handleClickAction={(teamName: string) => {
+                // refs[i].current?.showModal();
+              }}
+            />
+          </div>
         ))}
       </div>
 
-      {teams.map((team, i) => (
-        <TeamBoard
-          key={i}
-          ref={refs[i]}
-          name={team.name}
-          members={team.members}
-        />
-      ))}
+      {/* {teams.map((team, i) => ( */}
+      {/*   <TeamBoard */}
+      {/*     key={i} */}
+      {/*     ref={refs[i]} */}
+      {/*     name={team.name} */}
+      {/*     members={team.members} */}
+      {/*   /> */}
+      {/* ))} */}
     </>
   );
 };

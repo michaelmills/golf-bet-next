@@ -4,15 +4,13 @@ import matches from "@/data/matches.json";
 import { getAdjustedScore, parseScore } from "@/lib/utils";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
-
-// export const getMatch = async (tournId: string): Promise<MatchTournament> => {
-//   const tournament = await getTournament(tournId);
-//   const leaderboard = await getLeaderboard(tournId);
-// }
+import leaderboardData from "../../data/the-open-leaderboard.json";
+import tournamentData from "../../data/the-open.json";
 
 export const getLeaderboard = async (tournId: string): Promise<Team[]> => {
-  const response = await fetchLeaderboard(tournId);
-  const data = await response.json();
+  // const response = await fetchLeaderboard(tournId);
+  // const data = await response.json();
+  const data = leaderboardData;
 
   const teams: Team[] = matches.games
     .find((g) => g.tournamentId === tournId)!
@@ -35,6 +33,7 @@ export const getLeaderboard = async (tournId: string): Promise<Team[]> => {
           }
 
           const member: TeamMember = {
+            playerId: row.playerId,
             name: row.firstName + " " + row.lastName,
             isCut: row.status === "cut",
             isActive: row.status === "active",
@@ -68,8 +67,9 @@ export const getLeaderboard = async (tournId: string): Promise<Team[]> => {
 export const getTournament = async (
   tournId: string,
 ): Promise<TournamentInfoProps> => {
-  const response = await fetchTournament(tournId);
-  const data = await response.json();
+  // const response = await fetchTournament(tournId);
+  // const data = await response.json();
+  const data = tournamentData;
 
   dayjs.extend(utc);
   const begin = dayjs(+data.date.start.$date.$numberLong)

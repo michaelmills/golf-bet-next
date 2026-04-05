@@ -20,7 +20,7 @@ export const TeamBoard = forwardRef<HTMLDialogElement, TeamBoardProps>(
             {name}
           </div>
           <div className="overflow-x-auto">
-            <table className="table-pin-cols table table-auto table-zebra table-sm lg:table-lg">
+            <table className="table-pin-cols table table-auto table-zebra table-xs lg:table-lg">
               <thead>
                 <tr className="text-center font-bold lg:text-lg">
                   <th className="text-left">Player</th>
