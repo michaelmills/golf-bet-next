@@ -3,6 +3,7 @@
     {
       "tournamentId": "033",
       "tournamentName": "PGA Championship",
+      "tournamentYear": 2025,
       "teams": [
         {
           "player": "Michael Mills",
@@ -29,6 +30,7 @@
     {
       "tournamentId": "026",
       "tournamentName": "U.S. Open",
+      "tournamentYear": 2025,
       "teams": [
         {
           "player": "Michael Mills",
@@ -54,6 +56,8 @@
     },
     {
       "tournamentId": "100",
+      "tournamentName": "The Open Championship",
+      "tournamentYear": 2025,
       "teams": [
         {
           "player": "Michael Mills",

@@ -3,45 +3,53 @@
 import { UserX } from "lucide-react";
 
 export const TournamentInfo = (tournament: TournamentInfoProps) => {
+  const status = tournament.status.toLowerCase();
+
   return (
-    <div className="flex flex-col justify-center">
-      <div className="mb-1">
-        {tournament.status.toLowerCase() === "official" && (
-          <span className="w-min rounded-full bg-success px-2 align-middle text-xs font-bold text-primary-content sm:text-sm md:px-3 md:text-base">
+    <div className="flex flex-col items-center gap-1 text-center">
+      {/* Status badge */}
+      <div>
+        {status === "official" && (
+          <span className="inline-flex w-min items-center rounded-full bg-success px-2 align-middle text-xs font-bold text-success-content sm:text-sm md:px-3 md:text-base">
             Official
           </span>
         )}
-        {tournament.status.toLowerCase() === "in progress" && (
-          <span className="w-min rounded-full border border-base-300 bg-info px-2 align-middle text-xs font-bold text-green-600/60 shadow-lg shadow-base-300/50 sm:text-sm md:px-3 md:text-base">
+        {status === "in progress" && (
+          <span className="inline-flex w-min items-center gap-1.5 rounded-full border border-base-300 bg-info px-2 align-middle text-xs font-bold text-success sm:text-sm md:px-3 md:text-base">
             Round {tournament.currentRound}
-            <div className="ml-1 status animate-ping status-success"></div>
+            <span className="status status-success animate-ping size-1.5" />
           </span>
         )}
-        {tournament.status.toLowerCase() === "suspended" && (
-          <span className="w-min rounded-full border border-base-300 bg-error px-2 align-middle text-xs font-bold text-rose-700/60 shadow-lg shadow-base-300/50 sm:text-sm md:px-3 md:text-base">
+        {status === "suspended" && (
+          <span className="inline-flex w-min items-center gap-1.5 rounded-full border border-base-300 bg-error px-2 align-middle text-xs font-bold text-error-content sm:text-sm md:px-3 md:text-base">
             Round {tournament.currentRound} suspended
-            <div className="ml-1 status animate-ping status-error"></div>
+            <span className="status status-error animate-ping size-1.5" />
           </span>
         )}
       </div>
-      <div className="max-w-max text-center text-2xl/8 font-black text-base-content sm:text-3xl/10 md:text-4xl/16">
+
+      {/* Tournament name */}
+      <div className="text-2xl/8 font-black text-base-content sm:text-3xl/10 md:text-4xl/14">
         {tournament.name}
       </div>
-      <div className="content-center text-left text-xs text-base-content/70 sm:text-sm md:text-base">
-        <div className="align-middle">{tournament.date}</div>
-        <div className="align-middle">{tournament.course}</div>
-        <div className="align-middle">Par {tournament.par}</div>
+
+      {/* Metadata pill */}
+      <div className="inline-flex items-center gap-2 rounded-full border border-base-300 px-3 py-1 text-xs text-base-content/70 sm:text-sm">
+        <span>{tournament.date}</span>
+        <span className="opacity-40">·</span>
+        <span>{tournament.course}</span>
       </div>
-      {tournament.cutLine && (
-        <div className="mt-4 w-1/3 md:w-1/5">
-          <div className="content-center rounded-full bg-warning text-center text-xs text-warning-content sm:text-sm md:text-base md:font-medium">
-            <UserX className="mr-2 inline size-4 md:size-5" />
-            <span className="align-middle">
-              Cut Line&nbsp;{tournament.cutLine}
-            </span>
-          </div>
-        </div>
-      )}
+
+      {/* Par + cut line */}
+      <div className="flex items-center gap-3 text-xs text-base-content/70 sm:text-sm">
+        <span className="font-medium">Par {tournament.par}</span>
+        {tournament.cutLine && (
+          <span className="inline-flex items-center gap-1 rounded-full bg-warning px-2 py-0.5 font-medium text-warning-content">
+            <UserX className="size-3" />
+            Cut {tournament.cutLine}
+          </span>
+        )}
+      </div>
     </div>
   );
 };

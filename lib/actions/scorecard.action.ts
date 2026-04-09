@@ -8,7 +8,7 @@
 // };
 
 export const fetchScorecard = async (
-  tournId: number,
+  tournId: string,
   year: number,
   playerId: number,
 ) => {
@@ -19,13 +19,16 @@ export const fetchScorecard = async (
   const params = new URLSearchParams({
     orgId: String(1),
     year: String(year),
-    tournId: String(tournId),
+    tournId: tournId,
     playerId: String(playerId),
   });
 
   const url = `https://live-golf-data.p.rapidapi.com/scorecard?${params}`;
 
+  const cacheTtl = Number(process.env.CACHE_TTL_SECONDS ?? 60);
+
   return await fetch(url, {
     headers: requestHeaders,
+    next: { revalidate: cacheTtl },
   });
 };
