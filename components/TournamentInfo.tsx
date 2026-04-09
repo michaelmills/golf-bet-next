@@ -15,13 +15,13 @@ export const TournamentInfo = (tournament: TournamentInfoProps) => {
           </span>
         )}
         {status === "in progress" && (
-          <span className="inline-flex w-min items-center gap-1.5 rounded-full border border-base-300 bg-info px-2 align-middle text-xs font-bold text-success sm:text-sm md:px-3 md:text-base">
+          <span className="inline-flex whitespace-nowrap items-center gap-1.5 rounded-full border border-base-300 bg-base-200 px-2 align-middle text-xs font-bold text-base-content sm:text-sm md:px-3 md:text-base">
             Round {tournament.currentRound}
             <span className="status status-success animate-ping size-1.5" />
           </span>
         )}
         {status === "suspended" && (
-          <span className="inline-flex w-min items-center gap-1.5 rounded-full border border-base-300 bg-error px-2 align-middle text-xs font-bold text-error-content sm:text-sm md:px-3 md:text-base">
+          <span className="inline-flex whitespace-nowrap items-center gap-1.5 rounded-full border border-base-300 bg-error px-2 align-middle text-xs font-bold text-error-content sm:text-sm md:px-3 md:text-base">
             Round {tournament.currentRound} suspended
             <span className="status status-error animate-ping size-1.5" />
           </span>

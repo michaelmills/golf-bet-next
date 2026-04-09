@@ -50,7 +50,8 @@ COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
 COPY --from=build --chown=nextjs:nodejs /app/public ./public
 
 # Ensuring no unnecessary permissions are given and add necessary permissions for it to run server.js properly.
-RUN chmod -R a-w+x . && chmod -R a+x .next node_modules public
+RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next/cache
+RUN chmod -R a-w+x . && chmod -R a+x .next node_modules public && chmod -R u+w .next/cache
 
 USER nextjs
 

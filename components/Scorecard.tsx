@@ -48,8 +48,13 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 
 	const teamRoundScore = (round: number): string => {
 		const total = members.reduce((acc, m) => {
-			const s = m.roundScores.get(round) ?? "0";
-			return acc + (s === "E" ? 0 : Number(s));
+			const holes = m.scorecard.get(round);
+			if (holes) {
+				const strokes = holes.filter((s) => s > 0).reduce((a, b) => a + b, 0);
+				const par = holes.reduce((a, s, i) => a + (s > 0 ? holePars[i] : 0), 0);
+				return acc + (strokes - par);
+			}
+			return acc;
 		}, 0);
 		if (total === 0) return "E";
 		return total > 0 ? `+${total}` : String(total);
@@ -115,6 +120,8 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 							const innStrokes = back9.filter((s) => s > 0).reduce((a, b) => a + b, 0);
 							const playedFront = front9.some((s) => s > 0);
 							const playedBack = back9.some((s) => s > 0);
+							const playedParFront = front9.reduce((acc, s, i) => acc + (s > 0 ? holePars[i] : 0), 0);
+							const playedParBack = back9.reduce((acc, s, i) => acc + (s > 0 ? holePars[i + 9] : 0), 0);
 
 							// Thru indicator: show a right border after the last completed hole
 							// for the active player in the current live round
@@ -157,7 +164,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 										{playedFront ? (
 											<>
 												<div>{outStrokes}</div>
-												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes, parFront9)}</div>
+												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes, playedParFront)}</div>
 											</>
 										) : "-"}
 									</td>
@@ -183,16 +190,16 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 										{playedBack ? (
 											<>
 												<div>{innStrokes}</div>
-												<div className="text-xs font-normal opacity-60">{relativeScore(innStrokes, parBack9)}</div>
+												<div className="text-xs font-normal opacity-60">{relativeScore(innStrokes, playedParBack)}</div>
 											</>
 										) : "-"}
 									</td>
 
-									<th className={`text-center ${totCellColor(outStrokes + innStrokes, playedFront && playedBack ? total18 : playedFront ? parFront9 : parBack9)}`}>
+									<th className={`text-center ${totCellColor(outStrokes + innStrokes, playedParFront + playedParBack)}`}>
 										{playedFront || playedBack ? (
 											<>
 												<div>{outStrokes + innStrokes}</div>
-												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes + innStrokes, playedFront && playedBack ? total18 : playedFront ? parFront9 : parBack9)}</div>
+												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes + innStrokes, playedParFront + playedParBack)}</div>
 											</>
 										) : "-"}
 									</th>

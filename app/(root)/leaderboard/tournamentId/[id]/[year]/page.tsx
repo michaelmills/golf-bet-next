@@ -59,7 +59,8 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
         .filter((row: any) => team.golferIds.includes(row.playerId))
         .map(async (row: any) => {
           const scorecardResponse = await fetchScorecard(id, year, row.playerId);
-          const scorecardData = await scorecardResponse.json();
+          const scorecardJson = await scorecardResponse.json();
+          const scorecardData: any[] = Array.isArray(scorecardJson) ? scorecardJson : [];
 
           const scorecard: Map<number, number[]> = new Map(
             scorecardData
