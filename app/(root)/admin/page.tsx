@@ -10,6 +10,8 @@ import {
   ScheduleEntry,
   Player,
 } from "@/actions/tournament.action";
+import { createBrowserClient } from "@supabase/ssr";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const PLAYER_NAMES = [
@@ -98,6 +100,16 @@ const PlayerCombobox = ({ value, players, onChange }: PlayerComboboxProps) => {
 };
 
 export default function AdminPage() {
+  const router = useRouter();
+  const supabase = createBrowserClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY!
+  );
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    router.push("/admin/login");
+  };
   const [year, setYear] = useState(new Date().getFullYear());
   const [schedule, setSchedule] = useState<ScheduleEntry[]>([]);
   const [scheduleStatus, setScheduleStatus] = useState<"idle" | "loading" | "loaded" | "error">("idle");
@@ -257,7 +269,12 @@ export default function AdminPage() {
 
   return (
     <div className="mx-auto max-w-2xl space-y-6 p-4">
-      <h1 className="text-2xl font-black text-base-content">New Tournament</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-black text-base-content">New Tournament</h1>
+        <button className="btn btn-ghost btn-sm text-base-content/50" onClick={handleSignOut}>
+          Sign out
+        </button>
+      </div>
 
       {/* Tournament details */}
       <div className="rounded-lg border border-base-300 bg-base-100 p-4 dark:bg-neutral">
