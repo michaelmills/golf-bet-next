@@ -22,10 +22,4 @@ export function getTotalRoundScore(
   }, 0);
 }
 
-export function getPlayerPenalty(score: number): number {
-  let adj = score / 2;
-  if (adj < 2) {
-    return 2;
-  }
-  return adj;
-}
+export const CUT_PENALTY = 3;

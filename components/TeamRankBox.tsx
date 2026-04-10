@@ -66,10 +66,16 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
               <div className="avatar">
                 <div className="mask h-16 w-16 mask-circle">
                   {team.name.includes("Mauro") ? (
-                    <img src="/IMG_0289.jpeg" alt="Mauro" />
-                  ) : (
+                    <img src="/mauro_headshot.jpeg" alt="Mauro" />
+                  ) : team.name.includes("Anthony") ? (
+										<img src="/tuso_headshot.jpeg" alt="Anthony" />
+									) : team.name.includes("Patrick") ? (
+										<img src="/patrick_headshot.jpg" alt="Patrick" />
+									) : team.name.includes("Jon") ? (
+										<img src="/jon_headshot.jpeg" alt="Jon" />
+									) : (
                     <img
-                      src="/IMG_6497.jpeg"
+                      src="/maeve_headshot.jpeg"
                       width={250}
                       height={250}
                       alt="Avatar Tailwind CSS Component"
@@ -120,7 +126,7 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
               }}
               exit={{ skewY: "0%" }}
               transition={{ ease: "linear" }}
-              className={`rounded-b-lg border border-t-0 border-l-4 bg-base-100 dark:bg-neutral ${borderAccent(rank)}`}
+              className={`overflow-hidden rounded-b-lg border-base-300 border border-t-0 border-l-4 bg-base-100 dark:bg-neutral ${borderAccent(rank)}`}
             >
               <div className="mx-4 border-t border-base-300/50" />
               <Scorecard isVisible={true} members={team.members} holePars={holePars} />

@@ -39,12 +39,9 @@ const Rules = async () => {
               <CheckCircle className="mt-0.5 shrink-0 size-5 text-emerald-500 lg:size-6" />
               <span className="flex flex-col gap-2">
                 <span>
-                  Cut player penalty is the ceiling of half the official cut
-                  line and maxes out at +2.
-                </span>
-                <span className="rounded-lg bg-base-200 px-3 py-2 text-sm text-base-content/70 dark:bg-base-300">
-                  e.g. Cut line of +7 → penalty of +4 &nbsp;·&nbsp; Cut line of
-                  +1 → penalty of +2
+                  Any golfer who misses the cut is assigned a fixed score of +3
+                  for the remainder of the tournament. Their actual scorecard is
+                  preserved but does not count toward the team total.
                 </span>
               </span>
             </li>
@@ -53,6 +50,12 @@ const Rules = async () => {
               <span>
                 Team with the lowest total score at the end of the tournament
                 wins.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <CheckCircle className="mt-0.5 shrink-0 size-5 text-emerald-500 lg:size-6" />
+              <span>
+                No trading is allowed.
               </span>
             </li>
           </ul>

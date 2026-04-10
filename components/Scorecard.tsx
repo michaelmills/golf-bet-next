@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CUT_PENALTY, toDisplayScore } from "@/lib/utils";
 
 interface ScorecardProps {
 	isVisible: boolean;
@@ -16,7 +17,6 @@ const scoreCell = (score: number, par: number): string => {
 	const diff = score - par;
 	if (diff <= -2) return "rounded-full bg-amber-400 text-black ring-2 ring-amber-400 ring-offset-1";
 	if (diff === -1) return "rounded-full bg-green-500 text-white";
-	if (diff === 0) return "bg-base-200";
 	if (diff === 1) return "bg-orange-400 text-white";
 	if (diff >= 2) return "bg-red-600 text-white ring-2 ring-red-600 ring-offset-1";
 	return "";
@@ -62,6 +62,23 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 
 	return (
 		<div className={`${isVisible ? "" : "hidden"} p-2`}>
+			<div className="mb-3 flex flex-wrap gap-x-4 gap-y-1 px-1">
+				{members.map((m) => (
+					<div key={m.name} className="flex items-baseline gap-1.5 text-xs text-base-content/70">
+						<span>{m.name.split(" ")[0]}</span>
+						{m.isCut ? (
+							<>
+								<span className="line-through opacity-40">{toDisplayScore(m.score)}</span>
+								<span className="font-medium text-rose-500 dark:text-red-400">+{CUT_PENALTY}</span>
+							</>
+						) : (
+							<span className={`font-medium ${m.score < 0 ? "text-green-500" : m.score > 0 ? "text-rose-500 dark:text-red-400" : "text-base-content"}`}>
+								{toDisplayScore(m.score)}
+							</span>
+						)}
+					</div>
+				))}
+			</div>
 			<div role="tablist" className="tabs tabs-border mb-3">
 				{availableRounds.map((r) => {
 					const score = teamRoundScore(r);
@@ -129,16 +146,21 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 							const thruHole = isLiveRound ? Number(member.thru) : null;
 
 							return (
-								<tr key={member.name}>
+								<tr key={member.name} className="size-6">
 									{/* #7 — name column with status badge */}
 									<th className="bg-base-100 dark:bg-neutral">
-										<div className="flex items-center gap-1">
-											<span className="text-xs">{member.name}</span>
+										<div className="flex flex-col gap-0.5">
+											<div className="flex items-center gap-1">
+												<span className="text-xs">{member.name}</span>
+												{member.isCut && (
+													<span className="badge badge-error badge-xs shrink-0">CUT</span>
+												)}
+												{member.isActive && (
+													<span className="status status-success animate-ping size-1.5 shrink-0" />
+												)}
+											</div>
 											{member.isCut && (
-												<span className="badge badge-error badge-xs shrink-0">CUT</span>
-											)}
-											{member.isActive && (
-												<span className="status status-success animate-ping size-1.5 shrink-0" />
+												<span className="text-xs text-rose-500 dark:text-red-400">+{CUT_PENALTY} adj</span>
 											)}
 										</div>
 									</th>
@@ -150,7 +172,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 										return (
 											<td key={i} className={`text-center ${isThru ? "border-r-2 border-r-primary/60" : ""}`}>
 												{score === 0 ? (
-													<span className="opacity-25">·</span>
+													<span className="opacity-25">-</span>
 												) : (
 													<span className={`inline-flex size-6 items-center justify-center text-xs ${scoreCell(score, holePars[i])}`}>
 														{score}
@@ -166,7 +188,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 												<div>{outStrokes}</div>
 												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes, playedParFront)}</div>
 											</>
-										) : "-"}
+										) : <div className="size-6">-</div>}
 									</td>
 
 									{/* Back 9 */}
@@ -176,7 +198,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 										return (
 											<td key={i + 9} className={`text-center ${isThru ? "border-r-2 border-r-primary/60" : ""}`}>
 												{score === 0 ? (
-													<span className="opacity-25">·</span>
+													<span className="opacity-25">-</span>
 												) : (
 													<span className={`inline-flex size-6 items-center justify-center text-xs ${scoreCell(score, holePars[i + 9])}`}>
 														{score}
@@ -192,7 +214,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 												<div>{innStrokes}</div>
 												<div className="text-xs font-normal opacity-60">{relativeScore(innStrokes, playedParBack)}</div>
 											</>
-										) : "-"}
+										) : <div className="size-6">-</div>}
 									</td>
 
 									<th className={`text-center ${totCellColor(outStrokes + innStrokes, playedParFront + playedParBack)}`}>
@@ -201,7 +223,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 												<div>{outStrokes + innStrokes}</div>
 												<div className="text-xs font-normal opacity-60">{relativeScore(outStrokes + innStrokes, playedParFront + playedParBack)}</div>
 											</>
-										) : "-"}
+										) : <div className="size-6">-</div>}
 									</th>
 								</tr>
 							);
