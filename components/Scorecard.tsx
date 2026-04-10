@@ -41,10 +41,16 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 	const parBack9 = holePars.slice(9, 18).reduce((a, b) => a + b, 0);
 	const total18 = parFront9 + parBack9;
 
-	const availableRounds = [...members[0].scorecard.keys()].sort((a, b) => a - b);
-	const [selectedRound, setSelectedRound] = useState(members[0].currentRound);
-
 	const hasActiveMembers = members.some((m) => m.isActive);
+
+	const availableRounds = [
+		...new Set([
+			...members[0].scorecard.keys(),
+			...(hasActiveMembers ? [members[0].currentRound] : []),
+		]),
+	].sort((a, b) => a - b);
+
+	const [selectedRound, setSelectedRound] = useState(members[0].currentRound);
 
 	const teamRoundScore = (round: number): string => {
 		const total = members.reduce((acc, m) => {
