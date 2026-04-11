@@ -2,6 +2,7 @@
 
 import matches from "@/data/matches.json";
 import { getAdjustedScore, parseScore } from "@/lib/utils";
+import { getCacheTTL } from "@/lib/settings";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import leaderboardData from "../../data/the-open-leaderboard.json";
@@ -90,9 +91,8 @@ import tournamentData from "../../data/the-open.json";
 //   return Promise.resolve(info);
 // };
 
-const CACHE_TTL = Number(process.env.CACHE_TTL_SECONDS ?? 60);
-
 export const fetchLeaderboard = async (tournId: string, year: number = 2025) => {
+  const cacheTTL = await getCacheTTL();
   const requestHeaders: HeadersInit = new Headers();
   requestHeaders.set("x-rapidapi-host", process.env.GOLF_API_HOST as string);
   requestHeaders.set("x-rapidapi-key", process.env.GOLF_API_KEY as string);
@@ -103,12 +103,13 @@ export const fetchLeaderboard = async (tournId: string, year: number = 2025) => 
       "&year=" + year,
     {
       headers: requestHeaders,
-      next: { revalidate: CACHE_TTL },
+      next: { revalidate: cacheTTL },
     },
   );
 };
 
 export const fetchTournament = async (tournId: string, year: number = 2025) => {
+  const cacheTTL = await getCacheTTL();
   const requestHeaders: HeadersInit = new Headers();
   requestHeaders.set("x-rapidapi-host", process.env.GOLF_API_HOST as string);
   requestHeaders.set("x-rapidapi-key", process.env.GOLF_API_KEY as string);
@@ -117,7 +118,7 @@ export const fetchTournament = async (tournId: string, year: number = 2025) => {
     `https://live-golf-data.p.rapidapi.com/tournament?orgId=1&tournId=${tournId}&year=${year}`,
     {
       headers: requestHeaders,
-      next: { revalidate: CACHE_TTL },
+      next: { revalidate: cacheTTL },
     },
   );
 };

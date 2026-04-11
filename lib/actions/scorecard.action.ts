@@ -1,17 +1,13 @@
 "use server";
 
-// export const getLeaderboard = async (tournId: string): Promise<Team[]> => {
-//   const response = await fetchLeaderboard(tournId);
-//   const data = await response.json();
-//
-//   return Promise.resolve(sorted);
-// };
+import { getCacheTTL } from "@/lib/settings";
 
 export const fetchScorecard = async (
   tournId: string,
   year: number,
   playerId: number,
 ) => {
+  const cacheTTL = await getCacheTTL();
   const requestHeaders: HeadersInit = new Headers();
   requestHeaders.set("x-rapidapi-host", process.env.GOLF_API_HOST as string);
   requestHeaders.set("x-rapidapi-key", process.env.GOLF_API_KEY as string);
@@ -25,10 +21,8 @@ export const fetchScorecard = async (
 
   const url = `https://live-golf-data.p.rapidapi.com/scorecard?${params}`;
 
-  const cacheTtl = Number(process.env.CACHE_TTL_SECONDS ?? 60);
-
   return await fetch(url, {
     headers: requestHeaders,
-    next: { revalidate: cacheTtl },
+    next: { revalidate: cacheTTL },
   });
 };

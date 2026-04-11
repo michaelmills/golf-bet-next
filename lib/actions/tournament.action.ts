@@ -2,8 +2,7 @@
 
 import { supabase } from "@/lib/supabase";
 import { fetchLeaderboard } from "@/actions/leaderboard.action";
-
-const CACHE_TTL = Number(process.env.CACHE_TTL_SECONDS ?? 60);
+import { getCacheTTL } from "@/lib/settings";
 
 export interface Player {
   id: number;
@@ -77,6 +76,7 @@ export const fetchSchedule = async (
   year: number,
 ): Promise<{ schedule?: ScheduleEntry[]; error?: string }> => {
   try {
+    const cacheTTL = await getCacheTTL();
     const requestHeaders: HeadersInit = new Headers();
     requestHeaders.set("x-rapidapi-host", process.env.GOLF_API_HOST as string);
     requestHeaders.set("x-rapidapi-key", process.env.GOLF_API_KEY as string);
@@ -84,7 +84,7 @@ export const fetchSchedule = async (
     const response = await fetch(
       `https://live-golf-data.p.rapidapi.com/schedule?orgId=1&year=${year}`,
       { headers: requestHeaders,
-				next: { revalidate: CACHE_TTL },
+				next: { revalidate: cacheTTL },
 			},
     );
     const data = await response.json();
