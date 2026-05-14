@@ -14,7 +14,7 @@ const Rules = async () => {
           <ul className="space-y-4 lg:text-lg">
             <li className="flex gap-3">
               <CheckCircle className="mt-0.5 shrink-0 size-5 text-emerald-500 lg:size-6" />
-              <span>Round buy in is $20.</span>
+              <span>Round buy in is $25.</span>
             </li>
             <li className="flex gap-3">
               <CheckCircle className="mt-0.5 shrink-0 size-5 text-emerald-500 lg:size-6" />
@@ -50,6 +50,12 @@ const Rules = async () => {
               <span>
                 Team with the lowest total score at the end of the tournament
                 wins.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <CheckCircle className="mt-0.5 shrink-0 size-5 text-emerald-500 lg:size-6" />
+              <span>
+                Winner takes all.
               </span>
             </li>
             <li className="flex gap-3">
