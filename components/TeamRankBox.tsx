@@ -65,7 +65,9 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
             <div className="flex grow items-center gap-3">
               <div className="avatar">
                 <div className="mask h-16 w-16 mask-circle">
-                  {team.name.includes("Mauro") ? (
+                  {team.name.includes("Mills") ? (
+                    <img src="/maeve_headshot.jpeg" alt="Mauro" />
+                  ) : team.name.includes("Mauro") ? (
                     <img src="/mauro_headshot.jpeg" alt="Mauro" />
                   ) : team.name.includes("Anthony") ? (
 										<img src="/tuso_headshot.jpeg" alt="Anthony" />
@@ -75,10 +77,10 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
 										<img src="/jon_headshot.jpeg" alt="Jon" />
 									) : (
                     <img
-                      src="/maeve_headshot.jpeg"
+                      src="/IMG_6497.jpeg"
                       width={250}
                       height={250}
-                      alt="Avatar Tailwind CSS Component"
+                      alt="default"
                     />
                   )}
                 </div>

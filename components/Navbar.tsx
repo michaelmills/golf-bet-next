@@ -74,7 +74,7 @@ export const Navbar = () => {
         grouped.map(([year, ts]) => (
           <div key={year}>
             {grouped.length > 1 && (
-              <li className="menu-title px-3 py-1 text-xs opacity-50">{year}</li>
+              <li className="menu-title px-3 py-1 text-xs text-white opacity-50">{year}</li>
             )}
             {ts.map((t) => (
               <li key={`${t.id}-${t.year}`}>
@@ -103,7 +103,7 @@ export const Navbar = () => {
         grouped.map(([year, ts]) => (
           <div key={year}>
             {grouped.length > 1 && (
-              <li className="menu-title px-3 py-1 text-xs opacity-50">{year}</li>
+              <li className="menu-title px-3 py-1 text-xs text-white opacity-50">{year}</li>
             )}
             {ts.map((t) => (
               <li key={`${t.id}-${t.year}`}>

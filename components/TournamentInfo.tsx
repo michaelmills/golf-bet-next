@@ -1,6 +1,6 @@
 "use client";
 
-import { UserX } from "lucide-react";
+import { Scissors, UserX } from "lucide-react";
 
 export const TournamentInfo = (tournament: TournamentInfoProps) => {
   const status = tournament.status.toLowerCase();
@@ -38,15 +38,22 @@ export const TournamentInfo = (tournament: TournamentInfoProps) => {
         <span>{tournament.date}</span>
         <span className="opacity-40">·</span>
         <span>{tournament.course}</span>
+        <span className="opacity-40">·</span>
+        <span>Par {tournament.par}</span>
       </div>
 
-      {/* Par + cut line */}
-      <div className="flex items-center gap-3 text-xs text-base-content/70 sm:text-sm">
-        <span className="font-medium">Par {tournament.par}</span>
+      {/* Cut line + penalty */}
+      <div className="mt-2 flex items-center gap-3 text-xs text-base-content/70 sm:text-sm">
         {tournament.cutLine && (
           <span className="inline-flex items-center gap-1 rounded-full bg-warning px-2 py-0.5 font-medium text-warning-content">
             <UserX className="size-3" />
-            Cut {tournament.cutLine}
+            Cut Line {tournament.cutLine}
+          </span>
+        )}
+        {tournament.cutPenalty !== undefined && (
+          <span className="inline-flex items-center gap-1 rounded-full bg-error/15 px-2 py-0.5 font-medium text-error">
+            <Scissors className="size-3" />
+            Cut Penalty +{tournament.cutPenalty}
           </span>
         )}
       </div>

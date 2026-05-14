@@ -3,7 +3,7 @@ export function getAdjustedScore(player: TeamMember): number {
 }
 
 export function parseScore(score: string): number {
-  return score === "E" ? 0 : Number(score);
+  return score === "E" || score === "-" ? 0 : Number(score);
 }
 
 export function toDisplayScore(score: number | undefined): string {

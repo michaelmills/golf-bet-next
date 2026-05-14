@@ -33,11 +33,12 @@ export interface GameTeam {
 export const fetchGameTeams = async (
   tournamentId: string,
   year: number,
-): Promise<{ teams?: GameTeam[]; year?: number; error?: string }> => {
+): Promise<{ teams?: GameTeam[]; year?: number; cutPenalty?: number; error?: string }> => {
   const { data, error } = await supabase
     .from("game")
     .select(`
       tournament_year,
+      cut_penalty,
       entry (
         player ( name ),
         pick ( pga_player_id )
@@ -54,7 +55,7 @@ export const fetchGameTeams = async (
     golferIds: (e.pick as any[]).map((p) => p.pga_player_id),
   }));
 
-  return { teams, year: data.tournament_year };
+  return { teams, year: data.tournament_year, cutPenalty: (data as any).cut_penalty ?? 3 };
 };
 
 export const fetchPlayers = async (): Promise<{ players?: Player[]; error?: string }> => {

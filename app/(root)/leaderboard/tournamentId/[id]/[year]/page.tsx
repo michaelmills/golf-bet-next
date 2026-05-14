@@ -5,7 +5,7 @@ import {
 import { Leaderboard } from "@/components/Leaderboard";
 import { TournamentInfo } from "@/components/TournamentInfo";
 import { fetchGameTeams } from "@/lib/actions/tournament.action";
-import { getAdjustedScore, parseScore, CUT_PENALTY } from "@/lib/utils";
+import { getAdjustedScore, parseScore } from "@/lib/utils";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import { fetchScorecard } from "@/actions/scorecard.action";
@@ -53,6 +53,8 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
     tournamentInfo.cutLine = leaderboard.cutLines[0].cutScore;
   }
 
+  tournamentInfo.cutPenalty = gameData.cutPenalty ?? 3;
+
   const teams: Team[] = await Promise.all(gameData.teams
     .map(async (team) => {
       const members = await Promise.all(leaderboard.leaderboardRows
@@ -61,6 +63,8 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
           const scorecardResponse = await fetchScorecard(id, year, row.playerId);
           const scorecardJson = await scorecardResponse.json();
           const scorecardData: any[] = Array.isArray(scorecardJson) ? scorecardJson : [];
+
+					console.log(row.lastName + ": " + JSON.stringify(scorecardData));
 
           const scorecard: Map<number, number[]> = new Map(
             scorecardData
@@ -98,7 +102,7 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
             isCut: row.status === "cut",
             isActive: row.status === "active",
             score: parseScore(row.total),
-            adjusted: row.status === "cut" ? CUT_PENALTY : parseScore(row.total),
+            adjusted: row.status === "cut" ? (gameData.cutPenalty ?? 3) : parseScore(row.total),
             rounds,
             holeStart: row.startingHole.$numberInt,
             thru: row.currentHole.$numberInt,

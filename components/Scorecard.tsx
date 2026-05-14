@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CUT_PENALTY, toDisplayScore } from "@/lib/utils";
+import { toDisplayScore } from "@/lib/utils";
 
 interface ScorecardProps {
 	isVisible: boolean;
@@ -75,7 +75,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 						{m.isCut ? (
 							<>
 								<span className="line-through opacity-40">{toDisplayScore(m.score)}</span>
-								<span className="font-medium text-rose-500 dark:text-red-400">+{CUT_PENALTY}</span>
+								<span className="font-medium text-rose-500 dark:text-red-400">+{m.adjusted}</span>
 							</>
 						) : (
 							<span className={`font-medium ${m.score < 0 ? "text-green-500" : m.score > 0 ? "text-rose-500 dark:text-red-400" : "text-base-content"}`}>
@@ -166,7 +166,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 												)}
 											</div>
 											{member.isCut && (
-												<span className="text-xs text-rose-500 dark:text-red-400">+{CUT_PENALTY} adj</span>
+												<span className="text-xs text-rose-500 dark:text-red-400">+{member.adjusted} adj</span>
 											)}
 										</div>
 									</th>

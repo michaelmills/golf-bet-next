@@ -8,9 +8,6 @@ interface LeaderboardProps {
 }
 
 export const Leaderboard = ({ teams, holePars }: LeaderboardProps) => {
-  // const refs = teams.map((_) => React.createRef<HTMLDialogElement>());
-  // const refs = teams.map((_) => React.createRef<HTMLDivElement>());
-
   return (
     <>
       <div className="mx-auto h-max w-screen justify-center space-y-1 pb-24 md:w-2/3">
@@ -22,21 +19,11 @@ export const Leaderboard = ({ teams, holePars }: LeaderboardProps) => {
               team={team}
               holePars={holePars}
               handleClickAction={(teamName: string) => {
-                // refs[i].current?.showModal();
               }}
             />
           </div>
         ))}
       </div>
-
-      {/* {teams.map((team, i) => ( */}
-      {/*   <TeamBoard */}
-      {/*     key={i} */}
-      {/*     ref={refs[i]} */}
-      {/*     name={team.name} */}
-      {/*     members={team.members} */}
-      {/*   /> */}
-      {/* ))} */}
     </>
   );
 };

@@ -36,6 +36,7 @@ interface TournamentInfoProps {
   holePars: number[];
   currentRound?: string;
   cutLine?: string;
+  cutPenalty?: number;
 }
 
 interface MatchTournament {
