@@ -26,3 +26,26 @@ export const fetchScorecard = async (
     next: { revalidate: cacheTTL },
   });
 };
+
+export interface ScorecardRound {
+  roundId: number;
+  holes: number[];
+  currentRoundScore: string;
+}
+
+export const fetchScorecardData = async (
+  tournId: string,
+  year: number,
+  playerId: string,
+): Promise<ScorecardRound[]> => {
+  const res = await fetchScorecard(tournId, year, Number(playerId));
+  const json = await res.json();
+  const data: any[] = Array.isArray(json) ? json : [];
+  return data.map((r) => ({
+    roundId: Number(r.roundId.$numberInt),
+    holes: Array.from({ length: 18 }, (_, i) =>
+      Number(r.holes?.[String(i + 1)]?.holeScore?.$numberInt ?? 0)
+    ),
+    currentRoundScore: r.currentRoundScore as string,
+  }));
+};

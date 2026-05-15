@@ -5,7 +5,8 @@
       "Bash(cat:*)",
       "Bash(python3:*)",
       "Bash(node:*)",
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(find:*)"
     ]
   }
 }

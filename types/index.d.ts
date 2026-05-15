@@ -1,4 +1,5 @@
 declare interface TeamMember {
+  playerId: string;
   name: string;
   isCut: boolean;
   isActive: boolean;
@@ -7,8 +8,8 @@ declare interface TeamMember {
   adjusted: number;
   holeStart: number;
   thru: number;
-	scorecard: Map<number, number[]>;
-	roundScores: Map<number, string>;
+	scorecard?: Map<number, number[]>;
+	roundScores?: Map<number, string>;
 	currentRound: number;
 	currentRoundScore: string;
 }

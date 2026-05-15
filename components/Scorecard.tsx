@@ -43,6 +43,14 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 
 	const hasActiveMembers = members.some((m) => m.isActive);
 
+	if (!members[0].scorecard?.size) {
+		return (
+			<div className="flex justify-center p-6">
+				<span className="loading loading-spinner loading-sm" />
+			</div>
+		);
+	}
+
 	const availableRounds = [
 		...new Set([
 			...members[0].scorecard.keys(),
@@ -54,7 +62,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 
 	const teamRoundScore = (round: number): string => {
 		const total = members.reduce((acc, m) => {
-			const holes = m.scorecard.get(round);
+			const holes = m.scorecard?.get(round);
 			if (holes) {
 				const strokes = holes.filter((s) => s > 0).reduce((a, b) => a + b, 0);
 				const par = holes.reduce((a, s, i) => a + (s > 0 ? holePars[i] : 0), 0);
@@ -135,7 +143,7 @@ export const Scorecard = ({ isVisible, members, holePars }: ScorecardProps) => {
 					</thead>
 					<tbody>
 						{members.map((member) => {
-							const holes = member.scorecard.get(selectedRound) ?? Array(18).fill(0);
+							const holes = member.scorecard?.get(selectedRound) ?? Array(18).fill(0);
 							const front9 = holes.slice(0, 9);
 							const back9 = holes.slice(9, 18);
 

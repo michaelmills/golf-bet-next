@@ -3,12 +3,10 @@ import {
     fetchTournament,
 } from "@/actions/leaderboard.action";
 import { Leaderboard } from "@/components/Leaderboard";
-import { TournamentInfo } from "@/components/TournamentInfo";
 import { fetchGameTeams } from "@/lib/actions/tournament.action";
 import { getAdjustedScore, parseScore } from "@/lib/utils";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
-import { fetchScorecard } from "@/actions/scorecard.action";
 
 const getTournament = async (tournId: string, year: number): Promise<TournamentInfoProps> => {
   const response = await fetchTournament(tournId, year);
@@ -55,35 +53,10 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
 
   tournamentInfo.cutPenalty = gameData.cutPenalty ?? 3;
 
-  const teams: Team[] = await Promise.all(gameData.teams
-    .map(async (team) => {
-      const members = await Promise.all(leaderboard.leaderboardRows
+  const teams: Team[] = gameData.teams.map((team) => {
+      const members: TeamMember[] = leaderboard.leaderboardRows
         .filter((row: any) => team.golferIds.includes(row.playerId))
-        .map(async (row: any) => {
-          const scorecardResponse = await fetchScorecard(id, year, row.playerId);
-          const scorecardJson = await scorecardResponse.json();
-          const scorecardData: any[] = Array.isArray(scorecardJson) ? scorecardJson : [];
-
-					console.log(row.lastName + ": " + JSON.stringify(scorecardData));
-
-          const scorecard: Map<number, number[]> = new Map(
-            scorecardData
-              .filter((r: any) => Object.keys(r.holes).length > 0)
-              .map((r: any) => [
-                Number(r.roundId.$numberInt),
-                Array.from({ length: 18 }, (_, i) =>
-                  Number(r.holes?.[String(i + 1)]?.holeScore?.$numberInt ?? 0)
-                ),
-              ])
-          );
-
-          const roundScores: Map<number, string> = new Map(
-            scorecardData.map((r: any) => [
-              Number(r.roundId.$numberInt),
-              r.currentRoundScore as string,
-            ])
-          );
-
+        .map((row: any) => {
           const currentRound = Number(row.currentRound.$numberInt);
 
           const rounds: Map<number, number> = new Map(
@@ -97,7 +70,8 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
             rounds.set(currentRound, parseScore(row.currentRoundScore));
           }
 
-          const member: TeamMember = {
+          return {
+            playerId: row.playerId,
             name: row.firstName + " " + row.lastName,
             isCut: row.status === "cut",
             isActive: row.status === "active",
@@ -106,13 +80,10 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
             rounds,
             holeStart: row.startingHole.$numberInt,
             thru: row.currentHole.$numberInt,
-            scorecard,
-            roundScores,
             currentRound,
             currentRoundScore: row.currentRoundScore,
           };
-          return member;
-        }));
+        });
 
       const score = members.reduce((acc: number, player: any) => {
         return acc + getAdjustedScore(player);
@@ -126,19 +97,14 @@ const Tournament = async ({ params }: { params: Promise<{ id: string; year: stri
         cutMemberCount: members.filter((x: TeamMember) => x.isCut).length,
         activeMemberCount: members.filter((x: TeamMember) => x.isActive).length,
       };
-    }));
+    });
 
   const sorted = teams.sort((p1, p2) => p1.score - p2.score);
 
   return (
     <>
       {tournamentInfo && (
-        <>
-          <div className="mx-auto my-1 h-min w-full rounded-lg border-1 border-base-300 bg-base-100 p-4 md:w-2/3 dark:bg-neutral">
-            <TournamentInfo {...tournamentInfo} />
-          </div>
-          <Leaderboard teams={sorted} holePars={tournamentInfo.holePars} />
-        </>
+        <Leaderboard teams={sorted} holePars={tournamentInfo.holePars} tournamentInfo={tournamentInfo} tournId={id} year={year} />
       )}
     </>
   );

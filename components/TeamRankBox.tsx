@@ -3,13 +3,17 @@
 import { toDisplayScore } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { fetchScorecardData } from "@/actions/scorecard.action";
 import { Scorecard } from "./Scorecard";
 
 interface RankProps {
   rank: number;
   team: Team;
   holePars: number[];
+  visible: boolean;
+  tournId: string;
+  year: number;
   handleClickAction: (teamName: string) => void;
 }
 
@@ -33,8 +37,34 @@ const scoreStyle = (score: number): string => {
   return "text-base-content";
 };
 
-export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankProps) => {
-  const [visible, setVisible] = useState(false);
+export const TeamRankBox = ({ rank, team, holePars, visible, tournId, year, handleClickAction }: RankProps) => {
+  const [memberScorecards, setMemberScorecards] = useState<Map<string, { scorecard: Map<number, number[]>; roundScores: Map<number, string> }> | null>(null);
+  const fetched = useRef(false);
+
+  useEffect(() => {
+    if (!visible || fetched.current) return;
+    fetched.current = true;
+    Promise.all(
+      team.members.map(async (m) => {
+        const rounds = await fetchScorecardData(tournId, year, m.playerId);
+        const scorecard = new Map(
+          rounds.filter((r) => r.holes.some((h) => h > 0)).map((r) => [r.roundId, r.holes])
+        );
+        const roundScores = new Map(rounds.map((r) => [r.roundId, r.currentRoundScore]));
+        return { name: m.name, scorecard, roundScores };
+      })
+    ).then((results) => {
+      setMemberScorecards(new Map(results.map((r) => [r.name, { scorecard: r.scorecard, roundScores: r.roundScores }])));
+    });
+  }, [visible]);
+
+  const enrichedMembers = memberScorecards
+    ? team.members.map((m) => ({
+        ...m,
+        scorecard: memberScorecards.get(m.name)?.scorecard,
+        roundScores: memberScorecards.get(m.name)?.roundScores,
+      }))
+    : team.members;
 
   return (
     <>
@@ -53,7 +83,7 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
         {/* Card */}
         <div
           className={`h-max border border-base-300 border-l-4 bg-base-100 p-4 text-base-content transition-all dark:bg-neutral ${borderAccent(rank)} ${visible ? "rounded-t-lg" : "rounded-lg"}`}
-          onClick={() => setVisible(!visible)}
+          onClick={() => handleClickAction(team.name)}
         >
           <div className="flex min-h-full flex-row items-center">
             {/* Rank */}
@@ -131,7 +161,7 @@ export const TeamRankBox = ({ rank, team, holePars, handleClickAction }: RankPro
               className={`overflow-hidden rounded-b-lg border-base-300 border border-t-0 border-l-4 bg-base-100 dark:bg-neutral ${borderAccent(rank)}`}
             >
               <div className="mx-4 border-t border-base-300/50" />
-              <Scorecard isVisible={true} members={team.members} holePars={holePars} />
+              <Scorecard isVisible={true} members={enrichedMembers} holePars={holePars} />
             </motion.div>
           )}
         </AnimatePresence>
